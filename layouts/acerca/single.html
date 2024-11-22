@@ -1,0 +1,21 @@
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h4 class="blue-text text-darken-3 center-align">{{ .Title }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l6 xl6">
+        <div class="section"></div>
+        <img class="responsive-img materialboxed"
+        src="{{"/assets/images/matysfinal.jpg" | relURL }}" />
+      </div>
+      <div class="col s12 m6 l6 xl6">
+        <div class="container">
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

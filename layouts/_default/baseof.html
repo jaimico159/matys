@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/materialize/css/materialize.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    {{ block "header" . }}{{ end }} {{ block "nav" . }}{{ end }}
+    <div class="divider"></div>
+    {{ block "slider" . }}{{ end }} {{ block "main" . }}{{ end }}
+    <script type="text/javascript" src="/assets/js/jquery-3.2.1.js"></script>
+    <script src="/materialize/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".slider").slider();
+        $(".carousel").carousel();
+        $(".scrollspy").scrollSpy();
+      });
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2HWb9ONtj2U-gtaVe1SNzCxiQC0wFnQ0&loading=async&callback=initMap&libraries=marker"
+    ></script>
+    <script>
+      function initMap() {
+        var uluru = { lat: -16.394561, lng: -71.534051 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 17,
+          center: uluru,
+          styles: [
+            google.maps.MapTypeId.SATELLITE,
+            google.maps.MapTypeId.TERRAIN,
+            google.maps.MapTypeId.ROADMAP,
+            google.maps.MapTypeId.HYBRID,
+          ],
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: "Matys Laundry",
+        });
+        marker.addListener("click", () => {
+          window.open("https://maps.app.goo.gl/K8fdsHudXuWPsut58");
+        });
+      }
+    </script>
+  </body>
+</html>

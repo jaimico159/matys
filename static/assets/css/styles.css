@@ -1,0 +1,9 @@
+#map {
+  height: 400px;
+  width: s12 m12 l4 xl4;
+}
+
+#content {
+  position: relative;
+  top: 100vh;
+}

@@ -1,0 +1,63 @@
+{{ define "nav" }}
+<nav class="blue darken-3">
+  <div class="container">
+    <div class="navbar-fixed">
+      <a href="/" class="brand-logo">Maty's</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/acerca/">Nosotros</a></li>
+        <li><a href="/servicios/">Servicios</a></li>
+        <li class="active"><a href="/promociones/">Promociones</a></li>
+        <li><a href="#">Log-In</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li class="active"><a href="/">Inicio</a></li>
+  <li><a href="/acerca/">Nosotros</a></li>
+  <li><a href="/servicios/">Servicios</a></li>
+  <li class="active"><a href="/promociones/">Promociones</a></li>
+  <li><a href="#">Log-In</a></li>
+</ul>
+{{ end }} {{ define "slider" }}
+<section>
+  <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="/assets/images/aqp1.jpg" />
+        <!-- random image -->
+        <div class="caption center-align">
+          <h3>Pronto habrá promociones</h3>
+          <h5 class="light grey-text text-lighten-3">
+            El tuturutu, en la pileta de la Plaza de Armas de Arequipa
+          </h5>
+        </div>
+      </li>
+      <li>
+        <img src="/assets/images/aqp2.jpg" />
+        <!-- random image -->
+        <div class="caption left-align">
+          <h3>Pronto habrá promociones</h3>
+          <h5 class="light grey-text text-lighten-3">
+            Portales de la Plaza de Armas de Arequipa
+          </h5>
+        </div>
+      </li>
+      <li>
+        <img src="/assets/images/aqp3.jpg" />
+        <!-- random image -->
+        <div class="caption right-align">
+          <h3>Pronto habrá promociones</h3>
+          <h5 class="light grey-text text-lighten-3">
+            Catedral de la Plaza de Armas Arequipa.
+          </h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,64 @@
+{{ define "nav" }}
+<div class="navbar-fixed">
+  <nav class="navbar-fixed blue darken-3">
+    <div class="container">
+      <div class="nav-wrapper deep-purple">
+        <a href="index.html" class="brand-logo">Maty's</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Inicio</a></li>
+          <li class="active"><a href="/acerca">Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/promociones">Promociones</a></li>
+          <li><a href="#">Log-In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/index">Inicio</a></li>
+  <li class="active"><a href="/acerca">Nosotros</a></li>
+  <li><a href="/servicios">Servicios</a></li>
+  <li><a href="/promociones">Promociones</a></li>
+  <li><a href="#">Log-In</a></li>
+</ul>
+{{ end }} {{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h4 class="blue-text text-darken-3 center-align">Maty's Laundry</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l6 xl6">
+        <div class="section"></div>
+        <img
+          class="responsive-img materialboxed"
+          src="/assets/images/matysfinal.jpg"
+        />
+      </div>
+      <div class="col s12 m6 l6 xl6">
+        <div class="container">
+          <p>
+            Hola, sí tú que estas leyendo esto, ¿Asi que quieres saber un poco
+            más de nosotros cierto? Pues bueno, Maty's Laundry nace de la idea
+            de innovación en servicios de lavandería, ¿Ves la imagen que está al
+            lado? Pues es donde nosotros atendemos. Siempre estaremos contentos
+            de recibirte y servirte porque ese es nuestro objetivo, nos vemos en
+            el futuro atendiendo a muchas más personas en la ciudad de Arequipa.
+            Así que si estabas buscando un lugar de confianza donde obtener
+            servicio de lavandería, este es el lugar !!!
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m4 l3 xl3"></div>
+      <div class="col s12 m4 l3 xl3 hide-on-med-and-down"></div>
+    </div>
+  </div>
+</section>
+{{ partial "footer.html" . }} {{ end }}
