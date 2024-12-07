@@ -4,15 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Matys Laundry ofrece servicios rápidos y económicos de lavado y planchado en Arequipa. ¡Visítanos hoy!"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Matys Laundry",
+        "description": "Matys Laundry ofrece servicios rápidos y económicos de lavado y planchado en Arequipa, Perú.",
+        "image": "https://matyslaundry.com/assets/images/matysfinal.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Puente Grau 108-A",
+          "addressLocality": "Arequipa",
+          "addressRegion": "Arequipa",
+          "postalCode": "04000",
+          "addressCountry": "PE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -16.3945922,
+          "longitude": -71.533981
+        },
+        "telephone": "+51 995 577 941",
+        "url": "https://matyslaundry.com",
+        "openingHours": "Mo-Sa 08:00-20:00"
+      }
+    </script>
     <title>{{ .Title }}</title>
   </head>
   <body>
+    <a
+      href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
+      class="float bounce"
+      target="_blank"
+    >
+      <img
+        src="/assets/images/wssp-icon.png"
+        alt="whatsapp"
+        width="60"
+        height="60"
+      />
+    </a>
     {{ block "header" . }}{{ end }} {{ block "nav" . }}{{ end }}
     <div class="divider"></div>
     {{ block "slider" . }}{{ end }} {{ block "main" . }}{{ end }}
