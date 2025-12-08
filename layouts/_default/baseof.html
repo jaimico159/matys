@@ -1,20 +1,22 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Matys Laundry ofrece servicios rápidos y económicos de lavado y planchado en Arequipa. ¡Visítanos hoy!"
+      content="{{ with .Params.seoDescription }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}Matys Laundry ofrece soluciones rápidas y cuidadosas de lavado y planchado en Arequipa. ¡Agenda tu servicio hoy!{{ end }}{{ end }}"
     />
+    <meta name="theme-color" content="#1f2560" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -42,53 +44,31 @@
     </script>
     <title>{{ .Title }}</title>
   </head>
-  <body>
+  <body class="site">
     <a
       href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
-      class="float bounce"
+      class="contact-fab"
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Escríbenos por WhatsApp"
     >
       <img
         src="/assets/images/wssp-icon.png"
-        alt="whatsapp"
-        width="60"
-        height="60"
+        alt="WhatsApp"
+        width="56"
+        height="56"
       />
     </a>
-    {{ block "header" . }}{{ end }} {{ block "nav" . }}{{ end }}
-    <div class="divider"></div>
-    {{ block "slider" . }}{{ end }} {{ block "main" . }}{{ end }}
-    <script type="text/javascript" src="/assets/js/jquery-3.2.1.js"></script>
-    <script src="/materialize/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".slider").slider();
-        $(".carousel").carousel();
-        $(".scrollspy").scrollSpy();
-      });
-    </script>
+    {{ block "site_header" . }}{{ partial "site-header.html" . }}{{ end }}
+    <main id="content" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ block "site_footer" . }}{{ partial "footer.html" . }}{{ end }}
+    <script type="module" src="/assets/js/site.js"></script>
     <script
       async
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2HWb9ONtj2U-gtaVe1SNzCxiQC0wFnQ0&loading=async&callback=initMap&libraries=marker"
     ></script>
-    <script>
-      function initMap() {
-        var uluru = { lat: -16.393984, lng: -71.53321 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 17,
-          center: uluru,
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-          title: "Matys Laundry",
-        });
-        marker.addListener("click", () => {
-          window.open("https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA");
-        });
-      }
-    </script>
   </body>
 </html>

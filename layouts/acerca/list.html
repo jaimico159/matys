@@ -1,65 +1,105 @@
-{{ define "nav" }}
-<div class="navbar-fixed">
-  <nav class="navbar-fixed blue darken-3">
-    <div class="container">
-      <div class="nav-wrapper deep-purple">
-        <a href="/" class="brand-logo">Matys</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/">Inicio</a></li>
-          <li class="active"><a href="/acerca">Nosotros</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/promociones">Promociones</a></li>
-          <li><a href="#">Log-In</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Sobre nosotros</p>
+    <h1>Matys Laundry, expertos en cuidado textil en Arequipa</h1>
+    <p>
+      Somos un equipo familiar con más de una década de experiencia en lavandería
+      profesional, obsesionados con entregar ropa impecable, perfumada y a
+      tiempo.
+    </p>
+  </div>
+</section>
 
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="/">Inicio</a></li>
-  <li class="active"><a href="/acerca">Nosotros</a></li>
-  <li><a href="/servicios">Servicios</a></li>
-  <li><a href="/promociones">Promociones</a></li>
-  <li><a href="#">Log-In</a></li>
-</ul>
-{{ end }} {{ define "main" }}
 <section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h4 class="blue-text text-darken-3 center-align">Matys Laundry</h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m6 l6 xl6">
-        <div class="section"></div>
-        <img
-          class="responsive-img materialboxed"
-          src="/assets/images/matysfinal.jpg"
-          alt="lavanderia-arequipa"
-        />
-      </div>
-      <div class="col s12 m6 l6 xl6">
-        <div class="container">
-          <p>
-            Hola, sí tú que estas leyendo esto, ¿Asi que quieres saber un poco
-            más de nosotros cierto? Pues bueno, Matys Laundry nace de la idea de
-            innovación en servicios de lavandería, ¿Ves la imagen que está al
-            lado? Pues es donde nosotros atendemos. Siempre estaremos contentos
-            de recibirte y servirte porque ese es nuestro objetivo, nos vemos en
-            el futuro atendiendo a muchas más personas en la ciudad de Arequipa.
-            Así que si estabas buscando un lugar de confianza donde obtener
-            servicio de lavandería, este es el lugar !!!
-          </p>
+  <div class="container about">
+    <figure class="about__media">
+      <img
+        src="/assets/images/matysfinal.jpg"
+        alt="Local de Matys Laundry en Arequipa"
+        loading="lazy"
+      />
+    </figure>
+    <div class="about__content">
+      {{ .Content | safeHTML }}
+      <div class="about__stats">
+        <div>
+          <strong>+10 años</strong>
+          <span>Transformando prendas en Arequipa</span>
+        </div>
+        <div>
+          <strong>24 h</strong>
+          <span>Respuesta promedio para servicios express</span>
+        </div>
+        <div>
+          <strong>99%</strong>
+          <span>Clientes que nos recomiendan</span>
         </div>
       </div>
-      <div class="col s12 m4 l3 xl3"></div>
-      <div class="col s12 m4 l3 xl3 hide-on-med-and-down"></div>
     </div>
   </div>
 </section>
-{{ partial "footer.html" . }} {{ end }}
+
+<section class="section section--muted">
+  <div class="container">
+    <header class="section__header">
+      <p class="eyebrow">Nuestro compromiso</p>
+      <h2>Más que lavado: confianza, higiene y calidez humana</h2>
+      <p>
+        Cuidamos cada prenda como si fuera propia, combinando tecnología,
+        productos de primera y un trato cercano.
+      </p>
+    </header>
+    <div class="value-grid">
+      <article class="value-card">
+        <h3>Atención personalizada</h3>
+        <p>
+          Asignamos un especialista a cada cliente para resolver consultas y
+          coordinar entregas. Tus preferencias quedan registradas.
+        </p>
+      </article>
+      <article class="value-card">
+        <h3>Protocolos certificados</h3>
+        <p>
+          Seguimos procesos estandarizados de desinfección y control de calidad.
+          Cada lote se verifica antes de salir de nuestro taller.
+        </p>
+      </article>
+      <article class="value-card">
+        <h3>Compromiso con el planeta</h3>
+        <p>
+          Optimizamos el consumo de agua y energía, usamos detergentes
+          biodegradables y promovemos fundas reutilizables con nuestros clientes.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container mission">
+    <div class="mission__block">
+      <h2>Nuestra misión</h2>
+      <p>
+        Liberar tiempo a nuestros clientes entregando prendas radiantes,
+        seguras y listas para usar, con una experiencia de servicio memorable.
+      </p>
+    </div>
+    <div class="mission__block">
+      <h2>Nuestra visión</h2>
+      <p>
+        Ser la lavandería de referencia en el sur del Perú, reconocida por su
+        innovación, calidez y responsabilidad social.
+      </p>
+    </div>
+    <div class="mission__block">
+      <h2>Nuestros valores</h2>
+      <ul class="mission__list">
+        <li>Transparencia en cada proceso</li>
+        <li>Puntualidad en entregas y compromisos</li>
+        <li>Cuidado genuino por las personas y sus prendas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}

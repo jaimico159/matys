@@ -1,5 +1,8 @@
 ---
 title: "Servicios"
+seoDescription: "Servicios de lavandería, planchado y tratamientos especiales en Arequipa. Atención express, recojo y entrega a domicilio."
 ---
 
-Hola, sí tú que estas leyendo esto, ¿Así que quieres saber un poco más de nosotros cierto? Pues bueno, Matys Laundry nace de la idea de innovación en servicios de lavandería, ¿Ves la imagen que está al lado? Pues es donde nosotros atendemos. Siempre estaremos contentos de recibirte y servirte porque ese es nuestro objetivo, nos vemos en el futuro atendiendo a muchas más personas en la ciudad de Arequipa. Así que si estabas buscando un lugar de confianza donde obtener servicio de lavandería, este es el lugar!!!
+En Matys Laundry diseñamos planes a medida para hogares, empresas y alojamientos. Analizamos cada prenda para asignarla al proceso correcto y conseguir acabados impecables desde el primer servicio.
+
+Contamos con lavadoras industriales, solventes certificados, planchas de vapor profesional y un equipo experto que supervisa cada entrega. Sea cual sea tu necesidad —lavado por kilo, plancha premium, tratamientos especiales o textiles voluminosos— estamos listos para ayudarte.

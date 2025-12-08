@@ -1,0 +1,51 @@
+{{ $current := . }}
+{{ $section := .Section }}
+{{ $rel := .RelPermalink }}
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <span>Lavandería premium en Arequipa · Atención Lun-Sáb 8:00-20:00</span>
+      <a href="tel:+51995577941" class="utility-link">Tel. (+51) 995 577 941</a>
+    </div>
+  </div>
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="Inicio Matys Laundry">
+      <span class="brand__accent">Matys</span>
+      <span class="brand__name">Laundry</span>
+    </a>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span class="sr-only">Menú</span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav">
+      <ul class="nav__list">
+        <li class="nav__item{{ if or $current.IsHome (eq $rel "/") }} is-active{{ end }}">
+          <a href="/">Inicio</a>
+        </li>
+        <li class="nav__item{{ if or (eq $section "acerca") (hasPrefix $rel "/acerca") }} is-active{{ end }}">
+          <a href="/acerca/">Nosotros</a>
+        </li>
+        <li class="nav__item{{ if or (eq $section "servicios") (hasPrefix $rel "/servicios") }} is-active{{ end }}">
+          <a href="/servicios/">Servicios</a>
+        </li>
+        <li class="nav__item{{ if or (eq $section "promociones") (hasPrefix $rel "/promociones") }} is-active{{ end }}">
+          <a href="/promociones/">Promociones</a>
+        </li>
+      </ul>
+      <a
+        class="cta-link"
+        href="https://wa.me/51995577941?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20lavander%C3%ADa."
+        target="_blank"
+        rel="noopener noreferrer"
+        >Cotizar ahora</a
+      >
+    </nav>
+  </div>
+</header>

@@ -1,63 +1,142 @@
-{{ define "nav" }}
-<nav class="blue darken-3">
-  <div class="container">
-    <div class="navbar-fixed">
-      <a href="/" class="brand-logo">Matys</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/acerca/">Nosotros</a></li>
-        <li><a href="/servicios/">Servicios</a></li>
-        <li class="active"><a href="/promociones/">Promociones</a></li>
-        <li><a href="#">Log-In</a></li>
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Promociones</p>
+    <h1>Beneficios exclusivos para clientes frecuentes</h1>
+    <p>
+      Ahorra en tus servicios de lavandería y planchado con nuestros planes
+      especiales para hogares, empresas y alojamientos.
+    </p>
+    {{ with .Content }}
+      <div class="page-hero__text">
+        {{ . | safeHTML }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container promo-grid">
+    <article class="promo-card">
+      <h2>Plan Hogar</h2>
+      <p class="promo-card__price">Desde S/ 99</p>
+      <ul class="checklist">
+        <li>Hasta 18 kg de ropa al mes</li>
+        <li>Planchado de 10 prendas premium</li>
+        <li>1 recojo y entrega semanal</li>
+        <li>Fragancia hipoalergénica incluida</li>
+      </ul>
+      <a
+        class="btn btn--primary"
+        href="https://wa.me/51995577941?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20del%20Plan%20Hogar%20de%20Matys%20Laundry."
+        target="_blank"
+        rel="noopener noreferrer"
+        >Solicitar</a
+      >
+    </article>
+    <article class="promo-card">
+      <h2>Plan Empresas</h2>
+      <p class="promo-card__price">Desde S/ 249</p>
+      <ul class="checklist">
+        <li>Uniformes corporativos y ropa de cama</li>
+        <li>Lavado express 24 h sin costo extra</li>
+        <li>Reportes mensuales y facturación</li>
+        <li>Atención prioritaria y soporte dedicado</li>
+      </ul>
+      <a
+        class="btn btn--primary"
+        href="https://wa.me/51995577941?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20el%20Plan%20Empresas%20de%20Matys%20Laundry."
+        target="_blank"
+        rel="noopener noreferrer"
+        >Solicitar</a
+      >
+    </article>
+    <article class="promo-card">
+      <h2>Plan Alojamiento</h2>
+      <p class="promo-card__price">Desde S/ 189</p>
+      <ul class="checklist">
+        <li>Sábanas, toallas y amenities higienizados</li>
+        <li>Inventario de prendas por habitación</li>
+        <li>Recolección y entrega coordinada con housekeeping</li>
+        <li>Descuentos por volumen y temporada alta</li>
+      </ul>
+      <a
+        class="btn btn--primary"
+        href="https://wa.me/51995577941?text=Hola%2C%20quiero%20cotizar%20el%20Plan%20Alojamiento%20de%20Matys%20Laundry."
+        target="_blank"
+        rel="noopener noreferrer"
+        >Solicitar</a
+      >
+    </article>
+  </div>
+</section>
+
+<section class="section section--muted">
+  <div class="container loyalty">
+    <div class="loyalty__content">
+      <h2>Club Matys</h2>
+      <p>
+        Inscríbete y recibe recordatorios, beneficios por cumpleaños, upgrades a
+        planchado premium y sorpresas estacionales.
+      </p>
+      <ul class="checklist">
+        <li>5% de descuento desde tu segunda orden</li>
+        <li>Lavado gratis por referidos</li>
+        <li>Reportes para controlar tus consumos</li>
       </ul>
     </div>
+    <form
+      class="loyalty__form"
+      action="https://formsubmit.co/info@matyslaundry.com"
+      method="post"
+    >
+      <input type="hidden" name="_captcha" value="false" />
+      <label class="sr-only" for="club-name">Nombre completo</label>
+      <input
+        type="text"
+        id="club-name"
+        name="name"
+        placeholder="Nombre completo"
+        required
+      />
+      <label class="sr-only" for="club-email">Correo electrónico</label>
+      <input
+        type="email"
+        id="club-email"
+        name="email"
+        placeholder="Correo electrónico"
+        required
+      />
+      <label class="sr-only" for="club-phone">Celular</label>
+      <input
+        type="tel"
+        id="club-phone"
+        name="phone"
+        placeholder="Celular o WhatsApp"
+      />
+      <button class="btn btn--primary" type="submit">Quiero unirme</button>
+    </form>
   </div>
-</nav>
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="/">Inicio</a></li>
-  <li><a href="/acerca/">Nosotros</a></li>
-  <li><a href="/servicios/">Servicios</a></li>
-  <li class="active"><a href="/promociones/">Promociones</a></li>
-  <li><a href="#">Log-In</a></li>
-</ul>
-{{ end }} {{ define "slider" }}
-<section>
-  <div class="slider fullscreen">
-    <ul class="slides">
-      <li>
-        <img src="/assets/images/aqp1.jpg" alt="plaza-de-armas" />
-        <!-- random image -->
-        <div class="caption center-align">
-          <h3>Pronto habrá promociones</h3>
-          <h5 class="light grey-text text-lighten-3">
-            El tuturutu, en la pileta de la Plaza de Armas de Arequipa
-          </h5>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/images/aqp2.jpg" alt="portales-arequipa" />
-        <!-- random image -->
-        <div class="caption left-align">
-          <h3>Pronto habrá promociones</h3>
-          <h5 class="light grey-text text-lighten-3">
-            Portales de la Plaza de Armas de Arequipa
-          </h5>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/images/aqp3.jpg" alt="catedral-arequipa" />
-        <!-- random image -->
-        <div class="caption right-align">
-          <h3>Pronto habrá promociones</h3>
-          <h5 class="light grey-text text-lighten-3">
-            Catedral de la Plaza de Armas Arequipa.
-          </h5>
-        </div>
-      </li>
-    </ul>
+</section>
+
+<section class="section section--cta">
+  <div class="container cta">
+    <div class="cta__copy">
+      <p class="eyebrow eyebrow--light">Promociones a medida</p>
+      <h2>¿Tienes un proyecto especial?</h2>
+      <p>
+        Diseñamos paquetes personalizados para eventos, campañas y temporadas
+        pico. Hablemos y te enviamos una propuesta hoy mismo.
+      </p>
+    </div>
+    <div class="cta__actions">
+      <a
+        class="btn btn--light"
+        href="mailto:matyslaundry@gmail.com?subject=Cotizaci%C3%B3n%20de%20servicios%20de%20lavander%C3%ADa"
+        >Escríbenos por correo</a
+      >
+      <a class="btn btn--outline" href="tel:+51995577941">Llámanos</a>
+    </div>
   </div>
 </section>
 {{ end }}
