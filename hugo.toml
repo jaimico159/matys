@@ -1,3 +1,7 @@
 baseURL = 'https://matyslaundry.com/'
 languageCode = 'es-PE'
 title = 'Lavandería en Arequipa - Matys Laundry'
+
+[params]
+  description = "Matys Laundry — lavandería en Arequipa, Perú. Servicios de lavado, secado y planchado. Laundry service in Arequipa, Peru. Calle Jerusalén 519."
+  ogImage = "https://matyslaundry.com/assets/images/matysfinal.jpg"

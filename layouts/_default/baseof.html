@@ -1,13 +1,30 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Matys Laundry ofrece servicios rápidos y económicos de lavado y planchado en Arequipa. ¡Visítanos hoy!"
-    />
+
+    {{ $desc := .Description | default .Site.Params.description }}
+    <meta name="description" content="{{ $desc }}" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | Matys Laundry{{ end }}" />
+    <meta property="og:description" content="{{ $desc }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ .Site.Params.ogImage }}" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content="Matys Laundry" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | Matys Laundry{{ end }}" />
+    <meta name="twitter:description" content="{{ $desc }}" />
+    <meta name="twitter:image" content="{{ .Site.Params.ogImage }}" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -18,9 +35,9 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "LaundryService",
         "name": "Matys Laundry",
-        "description": "Matys Laundry ofrece servicios rápidos y económicos de lavado y planchado en Arequipa, Perú.",
+        "description": "Matys Laundry ofrece servicios de lavado, secado y planchado en Arequipa, Perú. Laundry service in Arequipa, Peru.",
         "image": "https://matyslaundry.com/assets/images/matysfinal.jpg",
         "address": {
           "@type": "PostalAddress",
@@ -35,12 +52,17 @@
           "latitude": -16.393984,
           "longitude": -71.53321
         },
-        "telephone": "+51 995 577 941",
+        "telephone": "+51995577941",
+        "email": "matyslaundry@gmail.com",
         "url": "https://matyslaundry.com",
-        "openingHours": "Mo-Sa 08:00-20:00"
+        "openingHours": ["Mo-Sa 08:00-20:00"],
+        "priceRange": "S/",
+        "currenciesAccepted": "PEN",
+        "paymentAccepted": "Cash",
+        "hasMap": "https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA"
       }
     </script>
-    <title>{{ .Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | Matys Laundry{{ end }}</title>
   </head>
   <body>
     <a
