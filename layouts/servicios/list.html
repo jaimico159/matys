@@ -1,553 +1,408 @@
-{{ define "nav" }}
-<div class="navbar-fixed">
-  <nav class="navbar-fixed blue darken-3">
-    <div class="container">
-      <div class="nav-wrapper deep-purple">
-        <a href="/" class="brand-logo">Matys</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/acerca">Nosotros</a></li>
-          <li class="active"><a href="/servicios">Servicios</a></li>
-          <li><a href="/promociones">Promociones</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+{{ define "main" }}
+
+<!-- Page header -->
+<div class="bg-blue-900 py-16 px-4 sm:px-6 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold mb-1">Servicios</h1>
+    <p class="text-blue-200 text-lg">Todo lo que ofrecemos en Matys Laundry</p>
+  </div>
 </div>
 
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="/">Inicio</a></li>
-  <li><a href="/acerca">Nosotros</a></li>
-  <li class="active"><a href="/servicios">Servicios</a></li>
-  <li><a href="/promociones">Promociones</a></li>
-</ul>
-{{ end }} {{ define "main" }}
-<!-- Section lavado en seco -->
+<!-- Mobile TOC -->
+<div class="lg:hidden bg-slate-50 border-b border-slate-200 px-4 py-3">
+  <details class="text-sm">
+    <summary class="font-semibold text-slate-700 cursor-pointer">Ver contenido de esta página</summary>
+    <nav class="mt-3 grid grid-cols-2 gap-1 text-slate-600">
+      <a href="#lavado" class="px-2 py-1 rounded hover:text-blue-700">Lavado</a>
+      <a href="#lavadoenagua" class="px-2 py-1 rounded hover:text-blue-700">Lavado en Agua</a>
+      <a href="#lavadoenseco" class="px-2 py-1 rounded hover:text-blue-700">Lavado en Seco</a>
+      <a href="#lavadodeternos" class="px-2 py-1 rounded hover:text-blue-700">Ternos y Sacos</a>
+      <a href="#lavadodeabrigos" class="px-2 py-1 rounded hover:text-blue-700">Abrigos</a>
+      <a href="#lavadodevestidos" class="px-2 py-1 rounded hover:text-blue-700">Vestidos</a>
+      <a href="#lavadodecasacasdecuero" class="px-2 py-1 rounded hover:text-blue-700">Casacas de Cuero</a>
+      <a href="#lavadodecorbatas" class="px-2 py-1 rounded hover:text-blue-700">Corbatas</a>
+      <a href="#planchado" class="px-2 py-1 rounded hover:text-blue-700">Planchado</a>
+      <a href="#planchadonormal" class="px-2 py-1 rounded hover:text-blue-700">Planchado Normal</a>
+      <a href="#planchadoalvapor" class="px-2 py-1 rounded hover:text-blue-700">Planchado al Vapor</a>
+      <a href="#lavadosespeciales" class="px-2 py-1 rounded hover:text-blue-700">Lavados Especiales</a>
+      <a href="#lavadoderopadecama" class="px-2 py-1 rounded hover:text-blue-700">Ropa de Cama</a>
+      <a href="#lavadodeedredones" class="px-2 py-1 rounded hover:text-blue-700">Edredones</a>
+      <a href="#lavadodecortinas" class="px-2 py-1 rounded hover:text-blue-700">Cortinas</a>
+      <a href="#lavadodetapasoles" class="px-2 py-1 rounded hover:text-blue-700">Tapasoles</a>
+      <a href="#lavadodepeluches" class="px-2 py-1 rounded hover:text-blue-700">Peluches</a>
+    </nav>
+  </details>
+</div>
 
-<!-- <section class="section"> -->
-<div class="wrapper">
-  <div class="row">
-    <div class="col s12 m8 l10 xl10">
-      <div class="container">
-        <div id="lavado" class="section scrollspy">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">Lavado</h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/lavadogeneral.jpg"
-                class="responsive-img"
-                alt="lavado"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Existen varios tipos de lavado pero para ser más simples vamos a
-                resumirlo, tenemos el el lavado en agua que es el más conocido y
-                el lavado en seco que es especial.
-              </p>
-              <p>
-                El proceso de lavado es diferente al que uno hace en casa, en
-                Matys seguimos el procedimiento adecuado para cada tipo de ropa,
-                eso incluye separar la ropa blanca de la de color, separar por
-                grado de suciedad, material de la ropa y otros aspectos que
-                vemos para alargar la vida util de tus prendas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadoenagua">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">Lavado en Agua</h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                El lavado en agua es el más conocido ya que usando lavadoras
-                domésticas se puede lavar la ropa utilizando agua, muchas
-                personas no saben como programar la lavadora para ser más
-                eficientes, además de que hay diferentes tipos de ropa, esto
-                hace que la ropa tenga menos vida útil además de gastar otros
-                recursos como electricidad, agua y tiempo.
-              </p>
-              <p>
-                En Matys nosotros nos encargarmos de esas cosas que hacen del
-                lavado un proceso con el cual tu ropa convervará su color y
-                quedará limpia sin maltratar la ropa tanto como las lavadoras
-                domésticas.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/lavadoenagua.jpg"
-                class="responsive-img"
-                alt="lavado-agua"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadoenseco">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">Lavado en Seco</h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/insumo.jpg"
-                class="responsive-img"
-                alt="insumo"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                El lavado en seco es un lavado especial porque es para ropa
-                especial. ¿Qué quiere decir esto? Quiere decir que la ropa no
-                puede ser lavada con un método común, porque el material del que
-                están hechos son delicados.
-              </p>
-              <p>
-                El lavado en seco es un proceso especial donde nosotros tenemos
-                cuidado de utilizar los insumos adecuados para el cuidado de tu
-                ropa. Tú no tienes que preocuparte de esas cosas ya que eso está
-                en nuestras manos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadodeternos">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Ternos
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                ¿Porqué el lavado de ternos es otra sección? Bueno está en una
-                sección aparte porque los trajes o ternos son unos de los que
-                más atendemos; para lavar un terno se utiliza, dependiendo del
-                material, lavado en agua o lavado en seco. Además de los trajes
-                también entran en esta categoría los sacos, blazers, ropa de
-                vestir elegante y otros parecidos.
-              </p>
-              <p>
-                Un buen cuidado de este tipo de prendas determina el tiempo que
-                dura la misma es por eso que es importante tener en cuenta
-                algunos aspectos de este tipo de ropa.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/sacos.jpg"
-                class="responsive-img"
-                alt="trajes"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadodeabrigos">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Abrigos
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/abrigos.jpg"
-                class="responsive-img"
-                alt="abrigos"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                En Matys tambien lavamos distintos tipos de abrigos por medio de
-                lavado en seco o en agua, de acuerdo al material de que esté
-                hecho.
-              </p>
-              <p>
-                Estas prendas requieren de mucho cuidado para que duren bastante
-                tiempo. Nosotros haremos este trabajo para que puedas tener tu
-                prenda por más tiempo.
-              </p>
-            </div>
-          </div>
-        </div>
+<!-- Main layout -->
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-12"
+     x-data="scrollspy()" x-init="init()">
+  <div class="flex gap-10">
 
-        <div class="section scrollspy" id="lavadodevestidos">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Vestidos
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                También lavamos distintos tipos de vestidos de acuerdo al
-                material, vestidos de novias, vestidos de fiesta o vestidos
-                simples, todas con un cuidado especial para mantenerla.
-              </p>
-              <p>
-                Al igual que los ternos o los abrigos tienen un tratamiento
-                especial ya sea que se lave al vapor o en agua.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/vestidos.jpeg"
-                class="responsive-img"
-                alt="vestidos"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="section scrollspy" id="lavadodecasacasdecuero">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Casacas de Cuero
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/casacacuero.jpg"
-                class="responsive-img"
-                alt="cuero"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Las casacas de cuero son un poco difíciles de lavar, tenemos los
-                recursos necesarios para este trabajo.
-              </p>
-              <p>
-                Haz que tus casacas de cuero esten en buen estado, tráelas a
-                Matys nosotros nos encargamos.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="section scrollspy" id="lavadodecorbatas">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Corbatas
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Las corbatas también se pueden lavar, las corbatas son
-                especiales porque se pueden ensuciar muy rápido y son dificiles
-                de lavar, tenemos la opción de lavar corbatas.
-              </p>
-              <p>
-                Manten tus corbatas limpias y en buen estado para utilizarlas en
-                memoentos especiales o en fiestas.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <div class="section"></div>
-              <img
-                src="/assets/images/corbatas.jpeg"
-                class="responsive-img"
-                alt="corbatas"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="section scrollspy" id="planchado">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">Planchado</h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <img
-                class="responsive-img"
-                src="/assets/images/plancha.jpeg"
-                alt="plancha"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                El planchado es una parte importante para cierto tipo de ropa,
-                hay que tener en cuenta que de acuerdo al tipo de ropa es que se
-                usan diferentes temperaturas y obviamente no es una plancha
-                común la que hace este trabajo sino una planchadora especial
-                para esto.
-              </p>
-              <p>
-                Hay ropa que se arruga muy facilmente que requiere un planchado
-                especial a temperaturas no muy altas y hay ropa que
-                <strong>no</strong> requiere de planchado.
-              </p>
-              <p>
-                Nosotros nos encargarmos de seleccionarlas, solo necesitamos que
-                traigas las prendas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="planchadonormal">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Planchado Normal
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Diremos que el planchado normal es el planchado sin usar vapor,
-                usando nuestra plancha industrial podemos regular la temperatura
-                por lo que e término planchado normal se aplica a esto.
-              </p>
-              <p>
-                Hay ropas que requieren planchado para que se vean mejor y
-                requieren ete tipo de planchado.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                class="responsive-img"
-                src="/assets/images/ropadoblada.jpeg"
-                alt="ropa-doblada"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="planchadoalvapor">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Planchado al Vapor
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/planchavapor.png"
-                class="responsive-img"
-                alt="plancha-vapor"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Este es un tipo especial de planchado, también hay que regular
-                la temperatura y el vapor. Hay ropa que puede ser planchada a
-                vapor, hay otras que no. Sim embargo es un método usado para
-                cierto tipo de ropa.
-              </p>
-              <p>
-                El planchado a vapor se realiza con el mismo artefacto que el
-                planchado normal pero usando otros atributos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadosespeciales">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavados Especiales
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Lavados especiales es una seccion aparte porque necesitamos que
-                sepas que no solamente lavamos ropa también hacemos lavados de
-                otros materiales no solamente ropa de uso diario o casual. Vamos
-                a describir algunos de los servicios específicos que ofrecemos,
-                esto incluye ropa de cama, tapasoles, edredones y otros que se
-                puedan lavar.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/colchas.jpg"
-                class="responsive-img"
-                alt="colchas"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadoderopadecama">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Ropa de Cama
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/colchas1.jpg"
-                class="responsive-img"
-                alt="colchas1"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Lavamos varios tipos de materiales, las ropas de cama no son una
-                excepción.
-              </p>
-
-              <p>
-                El lavado de ropa de cama engloba a colchas, sábanas, cubre
-                camas, frazadas y otros
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadodeedredones">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Edredones
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Algo de tener en cuenta. No son fáciles de lavar en casa por lo
-                que te ofrecemos este lavado especial.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/edredones.jpg"
-                class="responsive-img"
-                alt="edredones"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadodecortinas">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Cortinas
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <img
-                src="/assets/images/cortinas.jpeg"
-                class="responsive-img"
-                alt="cortinas"
-              />
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                El cuidado de las cortinas está en la sección de lavados
-                especiales porque generalmente son grandes, aveces unos son más
-                delicados, otros son gruesos otros más delgados, hay de
-                distintos materiales.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="section scrollspy" id="lavadodetapasoles">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Tapasoles
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                Son como cortinas super gruesas para tapar toda la ventana para
-                que no entre el sol, este tipo especial de cortina se llama
-                tapasol.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                class="responsive-img"
-                src="/assets/images/tapasol.jpeg"
-                alt="tapasol"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="section scrollspy" id="lavadodepeluches">
-          <div class="row">
-            <h3 class="blue-text text-darken-3 center-align">
-              Lavado de Peluches
-            </h3>
-          </div>
-          <div class="row">
-            <div class="col s12 m6 l6 xl6">
-              <p>
-                ¿Tienes peluches que quieres conservar limpios?, ¿Son regalos
-                especiales que te hicieron?
-              </p>
-              <p>
-                También en lavados especiales te ofrecemos el servicio de lavado
-                de peluches para que los mantengas en buen estado o simplemente
-                para limpiarlos porque se ensuciaron.
-              </p>
-            </div>
-            <div class="col s12 m6 l6 xl6">
-              <img
-                alt="peluches"
-                src="/assets/images/peluche.jpeg"
-                class="responsive-img"
-              />
-            </div>
-          </div>
-        </div>
+    <!-- Sticky sidebar TOC (desktop only) -->
+    <aside class="hidden lg:block w-52 shrink-0">
+      <div class="sticky top-24">
+        <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3 px-3">En esta página</p>
+        <nav class="space-y-0.5 text-sm">
+          <a href="#lavado"
+             :class="active === 'lavado' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
+             class="block px-3 py-1.5 rounded-lg transition-colors">Lavado</a>
+          <a href="#lavadoenagua"
+             :class="active === 'lavadoenagua' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Lavado en Agua</a>
+          <a href="#lavadoenseco"
+             :class="active === 'lavadoenseco' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Lavado en Seco</a>
+          <a href="#lavadodeternos"
+             :class="active === 'lavadodeternos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Ternos y Sacos</a>
+          <a href="#lavadodeabrigos"
+             :class="active === 'lavadodeabrigos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Abrigos</a>
+          <a href="#lavadodevestidos"
+             :class="active === 'lavadodevestidos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Vestidos</a>
+          <a href="#lavadodecasacasdecuero"
+             :class="active === 'lavadodecasacasdecuero' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Casacas de Cuero</a>
+          <a href="#lavadodecorbatas"
+             :class="active === 'lavadodecorbatas' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Corbatas</a>
+          <a href="#planchado"
+             :class="active === 'planchado' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
+             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">Planchado</a>
+          <a href="#planchadonormal"
+             :class="active === 'planchadonormal' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Planchado Normal</a>
+          <a href="#planchadoalvapor"
+             :class="active === 'planchadoalvapor' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Planchado al Vapor</a>
+          <a href="#lavadosespeciales"
+             :class="active === 'lavadosespeciales' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
+             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">Lavados Especiales</a>
+          <a href="#lavadoderopadecama"
+             :class="active === 'lavadoderopadecama' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Ropa de Cama</a>
+          <a href="#lavadodeedredones"
+             :class="active === 'lavadodeedredones' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Edredones</a>
+          <a href="#lavadodecortinas"
+             :class="active === 'lavadodecortinas' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Cortinas</a>
+          <a href="#lavadodetapasoles"
+             :class="active === 'lavadodetapasoles' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Tapasoles</a>
+          <a href="#lavadodepeluches"
+             :class="active === 'lavadodepeluches' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Peluches</a>
+        </nav>
       </div>
-    </div>
-    <div class="divider"></div>
-    <div class="col m4 l2 xl2 hide-on-small-only">
-      <div class="toc-wrapper pinned">
-        <ul
-          class="section table-of-contents blue-darken 3"
-          style="font-size: 15px"
-        >
-          <li><a href="#lavado">Lavado</a></li>
-          <li><a href="#lavadoenagua">Lavado en Agua</a></li>
-          <li><a href="#lavadoenseco">Lavado en Seco</a></li>
-          <li><a href="#lavadodeternos">Lavado de Ternos</a></li>
-          <li><a href="#lavadodeabrigos">Lavado de Abrigos</a></li>
-          <li><a href="#lavadodevestidos">Lavado de Vestidos</a></li>
-          <li>
-            <a href="#lavadodecasacasdecuero">Lavado de Casacas de Cuero</a>
-          </li>
-          <li><a href="#lavadodecorbatas">Lavado de Corbatas</a></li>
-          <li><a href="#planchado">Planchado</a></li>
-          <li><a href="#planchadonormal">Planchado Normal</a></li>
-          <li><a href="#planchadoalvapor">Planchado al Vapor</a></li>
-          <li><a href="#lavadosespeciales">Lavados Especiales</a></li>
-          <li><a href="#lavadoderopadecama">Lavado de Ropa de Cama</a></li>
-          <li><a href="#lavadodeedredones">Lavado de Edredones</a></li>
-          <li><a href="#lavadodecortinas">Lavado de Cortinas</a></li>
-          <li><a href="#lavadodetapasoles">Lavado de Tapasoles</a></li>
-          <li><a href="#lavadodepeluches">Lavado de Peluches</a></li>
-        </ul>
-      </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="flex-1 min-w-0 space-y-16">
+
+      <!-- Helper macro: section divider -->
+      <!-- Lavado -->
+      <section id="lavado" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
+          <h2 class="text-2xl font-bold text-slate-900">Lavado</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/lavadogeneral.jpg" alt="Servicio de lavado en Arequipa"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Existen varios tipos de lavado. En Matys lo resumimos en dos: el lavado en agua (el más conocido) y el lavado en seco (para prendas especiales).</p>
+            <p>El proceso de lavado es diferente al que uno hace en casa. Separamos la ropa blanca de la de color, por grado de suciedad, por material, y otros aspectos que prolongan la vida útil de tus prendas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lavado en Agua -->
+      <section id="lavadoenagua" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado en Agua</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>El lavado en agua es el más conocido. Muchas personas no saben cómo programar la lavadora correctamente para distintos tipos de ropa, lo que reduce la vida útil de las prendas.</p>
+            <p>En Matys nos encargamos de ese proceso para que tu ropa conserve su color y quede limpia sin maltratarla.</p>
+          </div>
+          <img src="/assets/images/lavadoenagua.jpg" alt="Lavado en agua"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Lavado en Seco -->
+      <section id="lavadoenseco" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado en Seco</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/insumo.jpg" alt="Lavado en seco - insumos"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>El lavado en seco es para prendas que no pueden lavarse con métodos comunes porque su material es delicado.</p>
+            <p>Es un proceso especial donde utilizamos los insumos adecuados. Tú no tienes que preocuparte de esas cosas — eso está en nuestras manos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ternos -->
+      <section id="lavadodeternos" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Ternos</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Los trajes y ternos son de los que más atendemos. Dependiendo del material se utiliza lavado en agua o lavado en seco. También entran en esta categoría sacos, blazers y ropa de vestir elegante.</p>
+            <p>Un buen cuidado determina el tiempo que dura la prenda.</p>
+          </div>
+          <img src="/assets/images/sacos.jpg" alt="Lavado de ternos y sacos"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Abrigos -->
+      <section id="lavadodeabrigos" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Abrigos</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/abrigos.jpg" alt="Lavado de abrigos"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Lavamos distintos tipos de abrigos mediante lavado en seco o en agua, de acuerdo al material.</p>
+            <p>Estas prendas requieren de mucho cuidado para que duren bastante tiempo. Nosotros haremos este trabajo para que puedas tener tu prenda por más tiempo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vestidos -->
+      <section id="lavadodevestidos" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Vestidos</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Lavamos distintos tipos de vestidos de acuerdo al material: vestidos de novia, vestidos de fiesta o vestidos simples, todos con cuidado especial.</p>
+            <p>Al igual que los ternos o los abrigos, tienen un tratamiento especial ya sea al vapor o en agua.</p>
+          </div>
+          <img src="/assets/images/vestidos.jpeg" alt="Lavado de vestidos"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Casacas de cuero -->
+      <section id="lavadodecasacasdecuero" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Casacas de Cuero</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/casacacuero.jpg" alt="Lavado de casacas de cuero"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Las casacas de cuero son un poco difíciles de lavar. Tenemos los recursos necesarios para este trabajo.</p>
+            <p>Haz que tus casacas de cuero estén en buen estado — tráelas a Matys y nosotros nos encargamos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Corbatas -->
+      <section id="lavadodecorbatas" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Corbatas</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Las corbatas se ensucian muy rápido y son difíciles de lavar. Tenemos la opción de lavarlas con el cuidado adecuado.</p>
+            <p>Mantén tus corbatas limpias y en buen estado para utilizarlas en momentos especiales.</p>
+          </div>
+          <img src="/assets/images/corbatas.jpeg" alt="Lavado de corbatas"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Planchado -->
+      <section id="planchado" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
+          <h2 class="text-2xl font-bold text-slate-900">Planchado</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/plancha.jpeg" alt="Servicio de planchado en Arequipa"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>El planchado es importante para cierto tipo de ropa. Según el tipo de tela se usan diferentes temperaturas, y no es una plancha común sino una planchadora industrial especializada.</p>
+            <p>Hay ropa que se arruga fácilmente y requiere planchado a temperaturas bajas, y hay ropa que <strong>no</strong> requiere planchado.</p>
+            <p>Nosotros nos encargamos de clasificarlas — solo necesitas traer las prendas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Planchado normal -->
+      <section id="planchadonormal" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Planchado Normal</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>El planchado normal es el planchado sin usar vapor. Con nuestra plancha industrial podemos regular la temperatura con precisión.</p>
+            <p>Hay ropas que requieren este tipo de planchado para verse mejor.</p>
+          </div>
+          <img src="/assets/images/ropadoblada.jpeg" alt="Planchado normal - ropa doblada"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Planchado al vapor -->
+      <section id="planchadoalvapor" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Planchado al Vapor</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/planchavapor.png" alt="Planchado al vapor"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>El planchado al vapor es un tipo especial. Se debe regular la temperatura y el nivel de vapor de acuerdo al tipo de tela.</p>
+            <p>Se realiza con el mismo equipo industrial pero utilizando la función de vapor para mejores resultados en ciertas prendas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lavados especiales -->
+      <section id="lavadosespeciales" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
+          <h2 class="text-2xl font-bold text-slate-900">Lavados Especiales</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>En Matys no solo lavamos ropa. También ofrecemos lavados de otros materiales: ropa de cama, edredones, cortinas, tapasoles y más.</p>
+            <p>A continuación describimos los servicios específicos de lavados especiales que ofrecemos.</p>
+          </div>
+          <img src="/assets/images/colchas.jpg" alt="Lavados especiales - colchas y edredones"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Ropa de cama -->
+      <section id="lavadoderopadecama" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Ropa de Cama</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/colchas1.jpg" alt="Lavado de ropa de cama, colchas y sábanas"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Lavamos varios tipos de materiales, y la ropa de cama no es una excepción.</p>
+            <p>El lavado de ropa de cama engloba colchas, sábanas, cubrecamas, frazadas y similares.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Edredones -->
+      <section id="lavadodeedredones" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Edredones</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Los edredones no son fáciles de lavar en casa por su tamaño y material. Por eso te ofrecemos este lavado especial para mantenerlos en perfectas condiciones.</p>
+          </div>
+          <img src="/assets/images/edredones.jpg" alt="Lavado de edredones"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Cortinas -->
+      <section id="lavadodecortinas" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Cortinas</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/cortinas.jpeg" alt="Lavado de cortinas"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Las cortinas están en la sección de lavados especiales porque generalmente son grandes y hay de distintos materiales: delicadas, gruesas, delgadas, de blackout y más.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tapasoles -->
+      <section id="lavadodetapasoles" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Tapasoles</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>Los tapasoles son cortinas super gruesas diseñadas para bloquear completamente la entrada de luz solar. Por su material especial requieren un lavado específico.</p>
+          </div>
+          <img src="/assets/images/tapasol.jpeg" alt="Lavado de tapasoles y blackout"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+        </div>
+      </section>
+
+      <!-- Peluches -->
+      <section id="lavadodepeluches" data-spy class="scroll-mt-24">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
+          <h3 class="text-xl font-semibold text-slate-800">Lavado de Peluches</h3>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <img src="/assets/images/peluche.jpeg" alt="Lavado de peluches"
+               class="rounded-xl shadow-sm w-full h-56 object-cover" />
+          <div class="space-y-3 text-slate-600 leading-relaxed">
+            <p>¿Tienes peluches que quieres conservar limpios? ¿Son regalos especiales que te hicieron?</p>
+            <p>También te ofrecemos el servicio de lavado de peluches para que los mantengas en buen estado o simplemente para limpiarlos.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
   </div>
 </div>
 
-<script type="text/javascript">
-  $(document).ready(function () {
-    $(".sidenav").sidenav();
-    $(".scrollspy").scrollSpy();
-  });
+<!-- Scrollspy script -->
+<script>
+function scrollspy() {
+  return {
+    active: '',
+    observer: null,
+    init() {
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.active = entry.target.id;
+          }
+        });
+      }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
+
+      this.$nextTick(() => {
+        document.querySelectorAll('[data-spy]').forEach(el => {
+          this.observer.observe(el);
+        });
+      });
+    },
+    destroy() {
+      if (this.observer) this.observer.disconnect();
+    }
+  }
+}
 </script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $(".sidenav").sidenav();
-    $(".materialboxed").materialbox();
-  });
-</script>
+
 {{ end }}

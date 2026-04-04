@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{ $desc := .Description | default .Site.Params.description }}
     <meta name="description" content="{{ $desc }}" />
@@ -25,13 +24,28 @@
     <meta name="twitter:description" content="{{ $desc }}" />
     <meta name="twitter:image" content="{{ .Site.Params.ogImage }}" />
 
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/materialize/css/materialize.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,48 +76,41 @@
         "hasMap": "https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA"
       }
     </script>
+
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | Matys Laundry{{ end }}</title>
   </head>
-  <body>
-    <a
-      href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
-      class="float bounce"
-      target="_blank"
-    >
-      <img
-        src="/assets/images/wssp-icon.png"
-        alt="whatsapp"
-        width="60"
-        height="60"
-      />
+  <body class="font-sans bg-white text-slate-800 antialiased">
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
+       style="position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background-color:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.45);z-index:9999;transition:transform .2s,box-shadow .2s;"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+      <img src="/assets/images/wssp-icon.png" alt="WhatsApp" width="28" height="28" />
     </a>
-    {{ block "header" . }}{{ end }} {{ block "nav" . }}{{ end }}
-    <div class="divider"></div>
-    {{ block "slider" . }}{{ end }} {{ block "main" . }}{{ end }}
-    <script type="text/javascript" src="/assets/js/jquery-3.2.1.js"></script>
-    <script src="/materialize/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".slider").slider();
-        $(".carousel").carousel();
-        $(".scrollspy").scrollSpy();
-      });
+
+    {{ partial "nav.html" . }}
+    {{ block "hero" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+    <!-- Google Maps -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2HWb9ONtj2U-gtaVe1SNzCxiQC0wFnQ0&loading=async&callback=initMap&libraries=marker">
     </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2HWb9ONtj2U-gtaVe1SNzCxiQC0wFnQ0&loading=async&callback=initMap&libraries=marker"
-    ></script>
     <script>
       function initMap() {
-        var uluru = { lat: -16.393984, lng: -71.53321 };
+        var pos = { lat: -16.393984, lng: -71.53321 };
         var map = new google.maps.Map(document.getElementById("map"), {
           zoom: 17,
-          center: uluru,
+          center: pos,
         });
         var marker = new google.maps.Marker({
-          position: uluru,
+          position: pos,
           map: map,
           title: "Matys Laundry",
         });
