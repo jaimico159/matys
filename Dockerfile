@@ -1,5 +1,5 @@
 # build stage
-FROM ghcr.io/gohugoio/hugo:v0.160.0-ext AS build
+FROM ghcr.io/gohugoio/hugo:v0.160.0 AS build
 WORKDIR /src
 COPY . .
 RUN hugo --minify
