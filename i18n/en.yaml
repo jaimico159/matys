@@ -1,0 +1,123 @@
+# Navigation
+nav_home: "Home"
+nav_about: "About"
+nav_services: "Services"
+nav_contact: "Contact"
+nav_contact_whatsapp: "Contact via WhatsApp"
+nav_open_menu: "Open menu"
+
+# Footer
+footer_how_to_get: "How to Get Here"
+footer_view_maps: "View on Google Maps"
+footer_contact_heading: "Contact"
+footer_address: "Calle Jerusalén 519, Arequipa, Peru"
+footer_hours: "Mon-Sat: 8:00 am - 8:00 pm"
+footer_navigation: "Navigation"
+footer_built_by: "Built by"
+
+# Home — hero
+home_hero_subtitle: "Laundry Service in Arequipa, Peru"
+home_hero_tagline: "Lavandería en Arequipa, Perú · Calle Jerusalén 519"
+home_hero_contact: "Contact Us"
+home_hero_services: "View Services"
+
+# Home — intro
+home_intro_title: "Laundry Service in Arequipa, Peru"
+home_intro_desc: "Matys Laundry is located in the historic center of Arequipa, steps away from Plaza de Armas. We offer washing, drying and ironing services for residents, tourists and travelers."
+
+# Home — why choose us
+home_why_title: "Why choose us?"
+home_trust_title: "Trust"
+home_trust_desc: "We work hard to give you the best service. The time you spend with us will show that you can trust us."
+home_punctuality_title: "Punctuality"
+home_punctuality_desc: "We honor our commitments and deliver your clothes on time so you can carry on with your day without delays."
+home_quality_title: "Quality Service"
+home_quality_desc: "We strive for your satisfaction. We use quality products and the right process for each type of garment."
+
+# Home — services
+home_services_title: "What services do we offer?"
+home_services_subtitle: "Washing, drying, ironing and special services for all types of textiles."
+home_service_wash_title: "Wash & Dry"
+home_service_wash_desc: "Water washing and dry cleaning depending on the garment type. We wash clothes by the kilo using the right process for each material."
+home_service_iron_title: "Ironing"
+home_service_iron_desc: "Standard and steam ironing with industrial equipment. The right temperature for each type of fabric."
+home_service_special_title: "Special Washes"
+home_service_special_desc: "Curtains, duvets, blankets, blinds and stuffed animals. Special services for textiles that require extra care."
+home_more_info: "Learn more"
+
+# Home — CTA
+home_cta_title: "Ready to bring your laundry?"
+home_cta_desc: "Visit us at Calle Jerusalén 519, steps from Plaza de Armas — or message us on WhatsApp."
+home_cta_send: "Send WhatsApp"
+home_whatsapp_msg: "Can%20you%20give%20me%20more%20information?"
+
+# About page
+acerca_page_subtitle: "Learn more about Matys Laundry"
+acerca_main_title: "Laundry in the heart of Arequipa"
+acerca_p1: "Matys Laundry is a laundry located in the historic center of Arequipa, Peru. It was founded with the goal of offering a modern, reliable and accessible laundry service for residents and travelers."
+acerca_p2: "We are located at <strong class=\"text-slate-800\">Calle Jerusalén 519</strong>, just a few minutes from the city center. We handle everyday clothing, delicate garments, suits, bed linen, curtains and more — using quality products and specialized machinery."
+acerca_p3: "If you are looking for a reliable laundry in Arequipa, Matys Laundry is your best option."
+acerca_schedule_label: "Hours"
+acerca_address_label: "Address"
+acerca_phone_label: "Phone / WhatsApp"
+acerca_email_label: "Email"
+
+# Services page
+servicios_page_subtitle: "Everything we offer at Matys Laundry"
+servicios_toc_label: "View page contents"
+servicios_toc_sidebar: "On this page"
+
+# Services — Wash
+lavado_title: "Washing"
+lavado_p1: "There are several types of washing. At Matys we summarize them in two: water washing (the most common) and dry cleaning (for special garments)."
+lavado_p2: "Our washing process is different from what you do at home. We separate whites from colors, by level of dirt, by material, and other factors that extend the life of your clothes."
+lavado_agua_title: "Water Washing"
+lavado_agua_p1: "Water washing is the most common method. Many people don't know how to set the washing machine correctly for different types of clothing, which shortens the life of garments."
+lavado_agua_p2: "At Matys we handle that process so your clothes keep their color and come out clean without damage."
+lavado_seco_title: "Dry Cleaning"
+lavado_seco_p1: "Dry cleaning is for garments that cannot be washed with conventional methods because their material is delicate."
+lavado_seco_p2: "It is a special process where we use the appropriate products. You don't have to worry about any of that — it's in our hands."
+lavado_ternos_title: "Suits & Jackets"
+lavado_ternos_p1: "Suits and blazers are among our most common requests. Depending on the material, we use water washing or dry cleaning. This category also includes sport coats, blazers and formal wear."
+lavado_ternos_p2: "Good care determines how long a garment lasts."
+lavado_abrigos_title: "Coats"
+lavado_abrigos_p1: "We wash different types of coats using dry cleaning or water washing, depending on the material."
+lavado_abrigos_p2: "These garments require a lot of care to last a long time. We will do this work so you can keep your coat in great condition for longer."
+lavado_vestidos_title: "Dresses"
+lavado_vestidos_p1: "We wash different types of dresses according to their material: wedding dresses, evening gowns or casual dresses, all with special care."
+lavado_vestidos_p2: "Like suits and coats, they receive special treatment either with steam or water."
+lavado_cuero_title: "Leather Jackets"
+lavado_cuero_p1: "Leather jackets are tricky to clean. We have the right resources for this job."
+lavado_cuero_p2: "Keep your leather jackets in great shape — bring them to Matys and we'll take care of them."
+lavado_corbatas_title: "Ties"
+lavado_corbatas_p1: "Ties get dirty quickly and are difficult to clean. We offer this service with the proper care."
+lavado_corbatas_p2: "Keep your ties clean and in good condition for special occasions."
+
+# Services — Ironing
+planchado_title: "Ironing"
+planchado_p1: "Ironing is important for certain types of clothing. Different temperatures are used depending on the fabric — and we use a specialized industrial iron, not a household one."
+planchado_p2: "Some clothes wrinkle easily and need ironing at low temperatures, and some clothes do <strong>not</strong> need ironing at all."
+planchado_p3: "We handle the classification — you just need to bring the garments."
+planchado_normal_title: "Standard Ironing"
+planchado_normal_p1: "Standard ironing is done without steam. With our industrial iron we can regulate the temperature precisely."
+planchado_normal_p2: "Some garments require this type of ironing to look their best."
+planchado_vapor_title: "Steam Ironing"
+planchado_vapor_p1: "Steam ironing is a special type. Temperature and steam level must be adjusted according to the fabric type."
+planchado_vapor_p2: "It uses the same industrial equipment but with the steam function enabled for better results on certain garments."
+
+# Services — Special Washes
+especiales_title: "Special Washes"
+especiales_p1: "At Matys we don't just wash clothing. We also offer washing of other materials: bed linen, duvets, curtains, blinds and more."
+especiales_p2: "Below we describe the specific special wash services we offer."
+ropa_cama_title: "Bed Linen"
+ropa_cama_p1: "We wash many types of materials, and bed linen is no exception."
+ropa_cama_p2: "Bed linen washing covers quilts, sheets, bedspreads, blankets and similar items."
+edredones_title: "Duvets"
+edredones_p1: "Duvets are not easy to wash at home due to their size and material. That's why we offer this special wash to keep them in perfect condition."
+cortinas_title: "Curtains"
+cortinas_p1: "Curtains are in the special washes section because they are generally large and come in different materials: delicate, thick, thin, blackout and more."
+tapasoles_title: "Blackout Blinds"
+tapasoles_p1: "Blackout blinds are very thick curtains designed to completely block sunlight. Their special material requires a specific washing process."
+peluches_title: "Stuffed Animals"
+peluches_p1: "Do you have stuffed animals you want to keep clean? Are they special gifts you received?"
+peluches_p2: "We also offer stuffed animal washing so you can keep them in good condition or simply get them cleaned."

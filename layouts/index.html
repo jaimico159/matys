@@ -24,25 +24,23 @@
 
   <!-- Content -->
   <div class="relative z-10 text-center text-white px-4 max-w-3xl mx-auto">
+    <p class="text-sm font-semibold uppercase tracking-widest text-amber-400 mb-3">Matys Laundry</p>
     <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">
-      Matys Laundry
+      {{ i18n "home_hero_subtitle" }}
     </h1>
-    <p class="text-2xl font-medium text-blue-100 mb-2">
-      Lavandería en Arequipa, Perú
-    </p>
     <p class="text-blue-200 mb-10">
-      Laundry service in Arequipa, Peru &middot; Calle Jerusalén 519
+      {{ i18n "home_hero_tagline" }}
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
+      <a href="https://wa.me/51995577941?text={{ i18n `home_whatsapp_msg` }}"
          target="_blank" rel="noopener noreferrer"
          class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-3.5 rounded-xl text-lg shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-amber-500/40">
         <img src="/assets/images/wssp-icon.png" alt="" width="22" height="22" />
-        Contáctanos
+        {{ i18n "home_hero_contact" }}
       </a>
-      <a href="/servicios/"
-         class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-8 py-3.5 rounded-xl text-lg border border-white/30 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5">
-        Ver Servicios
+      {{ with .Site.GetPage "servicios" }}<a href="{{ .RelPermalink }}"
+         class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-8 py-3.5 rounded-xl text-lg border border-white/30 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5">{{ end }}
+        {{ i18n "home_hero_services" }}
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
@@ -74,13 +72,13 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
       </svg>
-      Calle Jerusalén 519, Arequipa
+      {{ i18n "footer_address" }}
     </a>
     <span class="flex items-center gap-1.5">
       <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
       </svg>
-      Lun–Sáb: 8:00 am – 8:00 pm
+      {{ i18n "footer_hours" }}
     </span>
     <a href="https://wa.me/51995577941"
        target="_blank" rel="noopener noreferrer"
@@ -97,11 +95,10 @@
 <section class="py-16 px-4 sm:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-      Lavandería en Arequipa &mdash; Laundry Service in Arequipa, Peru
+      {{ i18n "home_intro_title" }}
     </h2>
     <p class="text-slate-500 text-lg leading-relaxed">
-      Matys Laundry está ubicada en el centro histórico de Arequipa. Ofrecemos servicios de lavado,
-      secado y planchado para residentes, turistas y viajeros.
+      {{ i18n "home_intro_desc" }}
     </p>
   </div>
 </section>
@@ -109,38 +106,35 @@
 <!-- Why choose us -->
 <section class="py-4 pb-16 px-4 sm:px-6">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-slate-900 text-center mb-10">¿Por qué elegirnos?</h2>
+    <h2 class="text-2xl font-bold text-slate-900 text-center mb-10">{{ i18n "home_why_title" }}</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-        <img src="/assets/images/camisas.jpg" alt="Confianza en Matys Laundry" class="w-full h-48 object-cover" loading="lazy" />
+        <img src="/assets/images/camisas.jpg" alt="{{ i18n `home_trust_title` }}" class="w-full h-48 object-cover" loading="lazy" />
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Confianza</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_trust_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed">
-            Trabajamos duro para ofrecerte el mejor servicio. El tiempo que pases
-            con nosotros demostrará que puedes confiar en nosotros.
+            {{ i18n "home_trust_desc" }}
           </p>
         </div>
       </article>
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-        <img src="/assets/images/puntualidad.jpg" alt="Puntualidad en la entrega" class="w-full h-48 object-cover" loading="lazy" />
+        <img src="/assets/images/puntualidad.jpg" alt="{{ i18n `home_punctuality_title` }}" class="w-full h-48 object-cover" loading="lazy" />
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Puntualidad</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_punctuality_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed">
-            Cumplimos con lo acordado y entregamos tu ropa a tiempo para que
-            sigas con tus actividades sin contratiempos.
+            {{ i18n "home_punctuality_desc" }}
           </p>
         </div>
       </article>
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-        <img src="/assets/images/calidad2.jpeg" alt="Calidad de servicio de lavandería" class="w-full h-48 object-cover" loading="lazy" />
+        <img src="/assets/images/calidad2.jpeg" alt="{{ i18n `home_quality_title` }}" class="w-full h-48 object-cover" loading="lazy" />
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Calidad de Servicio</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_quality_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed">
-            Nos esforzamos para que estés satisfecho. Usamos insumos de calidad
-            y el proceso adecuado para cada tipo de prenda.
+            {{ i18n "home_quality_desc" }}
           </p>
         </div>
       </article>
@@ -153,25 +147,24 @@
 <section class="py-16 px-4 sm:px-6 bg-slate-50">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-10">
-      <h2 class="text-2xl font-bold text-slate-900 mb-2">¿Qué servicios ofrecemos?</h2>
-      <p class="text-slate-500">Lavado, secado, planchado y servicios especiales para todo tipo de textiles.</p>
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">{{ i18n "home_services_title" }}</h2>
+      <p class="text-slate-500">{{ i18n "home_services_subtitle" }}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
         <div class="overflow-hidden">
-          <img src="/assets/images/lavaseca.jpg" alt="Servicio de lavado y secado en Arequipa"
+          <img src="/assets/images/lavaseca.jpg" alt="{{ i18n `home_service_wash_title` }}"
                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Lavado y Secado</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_service_wash_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed mb-4">
-            Lavado en agua y lavado en seco según el tipo de prenda. Lavamos
-            ropa por kilo con el proceso adecuado para cada material.
+            {{ i18n "home_service_wash_desc" }}
           </p>
-          <a href="/servicios/#lavado"
+          <a href="{{ .Site.Params.servicesPath }}#lavado"
              class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold text-sm transition-colors">
-            Más información
+            {{ i18n "home_more_info" }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -181,18 +174,17 @@
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
         <div class="overflow-hidden">
-          <img src="/assets/images/plancha.jpeg" alt="Servicio de planchado en Arequipa"
+          <img src="/assets/images/plancha.jpeg" alt="{{ i18n `home_service_iron_title` }}"
                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Planchado</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_service_iron_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed mb-4">
-            Planchado normal y al vapor con equipos industriales. Temperatura
-            adecuada para cada tipo de tela.
+            {{ i18n "home_service_iron_desc" }}
           </p>
-          <a href="/servicios/#planchado"
+          <a href="{{ .Site.Params.servicesPath }}#planchado"
              class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold text-sm transition-colors">
-            Más información
+            {{ i18n "home_more_info" }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -202,18 +194,17 @@
 
       <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
         <div class="overflow-hidden">
-          <img src="/assets/images/colchas1.jpg" alt="Lavados especiales de cortinas y edredones en Arequipa"
+          <img src="/assets/images/colchas1.jpg" alt="{{ i18n `home_service_special_title` }}"
                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
         </div>
         <div class="p-6">
-          <h3 class="font-bold text-lg text-slate-900 mb-2">Lavados Especiales</h3>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">{{ i18n "home_service_special_title" }}</h3>
           <p class="text-slate-500 text-sm leading-relaxed mb-4">
-            Cortinas, edredones, frazadas, tapasoles y peluches. Servicios
-            especiales para textiles que requieren cuidado extra.
+            {{ i18n "home_service_special_desc" }}
           </p>
-          <a href="/servicios/#lavadosespeciales"
+          <a href="{{ .Site.Params.servicesPath }}#lavadosespeciales"
              class="inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 font-semibold text-sm transition-colors">
-            Más información
+            {{ i18n "home_more_info" }}
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -228,17 +219,88 @@
 <!-- CTA strip -->
 <section class="py-20 px-4 sm:px-6 bg-blue-900 text-white text-center">
   <div class="max-w-2xl mx-auto">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-3">¿Listo para traer tu ropa?</h2>
+    <h2 class="text-2xl sm:text-3xl font-bold mb-3">{{ i18n "home_cta_title" }}</h2>
     <p class="text-blue-200 text-lg mb-8">
-      Visítanos en Calle Jerusalén 519, Arequipa &mdash; o escríbenos por WhatsApp.
+      {{ i18n "home_cta_desc" }}
     </p>
-    <a href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
+    <a href="https://wa.me/51995577941?text={{ i18n `home_whatsapp_msg` }}"
        target="_blank" rel="noopener noreferrer"
        class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-8 py-3.5 rounded-xl text-lg shadow-lg transition-all duration-200 hover:-translate-y-0.5">
       <img src="/assets/images/wssp-icon.png" alt="" width="22" height="22" />
-      Enviar WhatsApp
+      {{ i18n "home_cta_send" }}
     </a>
   </div>
 </section>
+
+<!-- FAQ Schema -->
+{{ if eq .Site.Language.Lang "en" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day laundry service in Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, depending on the quantity and drop-off time, we offer same-day service. Contact us on WhatsApp to arrange it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Matys Laundry located?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We are at Calle Jerusalén 519, in the historic center of Arequipa, steps from Plaza de Armas. Open Monday to Saturday, 8:00 am – 8:00 pm." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve tourists and backpackers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, we welcome local residents, tourists, and travelers who need laundry service in Arequipa. Drop-off service available." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does laundry cost in Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Washing is charged by the kilogram. Contact us on WhatsApp for current pricing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a laundry near Plaza de Armas Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Matys Laundry at Calle Jerusalén 519 is just a few steps from Plaza de Armas, in the heart of Arequipa's historic center." }
+    }
+  ]
+}
+</script>
+{{ else }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Ofrecen servicio de lavandería el mismo día en Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, dependiendo de la cantidad de ropa y el horario de entrega, ofrecemos servicio el mismo día. Contáctanos por WhatsApp para coordinar." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde está ubicada Matys Laundry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Estamos en Calle Jerusalén 519, en el centro histórico de Arequipa, a pasos de la Plaza de Armas. Atención de lunes a sábado de 8:00 am a 8:00 pm." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Atienden a turistas y mochileros?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, atendemos tanto a residentes locales como a turistas y viajeros que necesiten lavar su ropa en Arequipa." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta el lavado de ropa en Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El lavado se cobra por kilo. Escríbenos por WhatsApp para conocer los precios actualizados." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay una lavandería cerca de la Plaza de Armas de Arequipa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí — Matys Laundry en Calle Jerusalén 519 está a pocos pasos de la Plaza de Armas, en el corazón del centro histórico de Arequipa." }
+    }
+  ]
+}
+</script>
+{{ end }}
 
 {{ end }}

@@ -1,0 +1,123 @@
+# Navigation
+nav_home: "Inicio"
+nav_about: "Nosotros"
+nav_services: "Servicios"
+nav_contact: "Contactar"
+nav_contact_whatsapp: "Contactar por WhatsApp"
+nav_open_menu: "Abrir menú"
+
+# Footer
+footer_how_to_get: "Cómo Llegar"
+footer_view_maps: "Ver en Google Maps"
+footer_contact_heading: "Contacto"
+footer_address: "Calle Jerusalén 519, Arequipa, Perú"
+footer_hours: "Lun-Sáb: 8:00 am - 8:00 pm"
+footer_navigation: "Navegación"
+footer_built_by: "Hecho por"
+
+# Home — hero
+home_hero_subtitle: "Lavandería en Arequipa, Perú"
+home_hero_tagline: "Laundry service in Arequipa, Peru · Calle Jerusalén 519"
+home_hero_contact: "Contáctanos"
+home_hero_services: "Ver Servicios"
+
+# Home — intro
+home_intro_title: "Lavandería en Arequipa — Laundry Service in Arequipa, Peru"
+home_intro_desc: "Matys Laundry está ubicada en el centro histórico de Arequipa, a pasos de la Plaza de Armas. Ofrecemos servicios de lavado, secado y planchado para residentes, turistas y viajeros."
+
+# Home — why choose us
+home_why_title: "¿Por qué elegirnos?"
+home_trust_title: "Confianza"
+home_trust_desc: "Trabajamos duro para ofrecerte el mejor servicio. El tiempo que pases con nosotros demostrará que puedes confiar en nosotros."
+home_punctuality_title: "Puntualidad"
+home_punctuality_desc: "Cumplimos con lo acordado y entregamos tu ropa a tiempo para que sigas con tus actividades sin contratiempos."
+home_quality_title: "Calidad de Servicio"
+home_quality_desc: "Nos esforzamos para que estés satisfecho. Usamos insumos de calidad y el proceso adecuado para cada tipo de prenda."
+
+# Home — services
+home_services_title: "¿Qué servicios ofrecemos?"
+home_services_subtitle: "Lavado, secado, planchado y servicios especiales para todo tipo de textiles."
+home_service_wash_title: "Lavado y Secado"
+home_service_wash_desc: "Lavado en agua y lavado en seco según el tipo de prenda. Lavamos ropa por kilo con el proceso adecuado para cada material."
+home_service_iron_title: "Planchado"
+home_service_iron_desc: "Planchado normal y al vapor con equipos industriales. Temperatura adecuada para cada tipo de tela."
+home_service_special_title: "Lavados Especiales"
+home_service_special_desc: "Cortinas, edredones, frazadas, tapasoles y peluches. Servicios especiales para textiles que requieren cuidado extra."
+home_more_info: "Más información"
+
+# Home — CTA
+home_cta_title: "¿Listo para traer tu ropa?"
+home_cta_desc: "Visítanos en Calle Jerusalén 519, a pasos de la Plaza de Armas — o escríbenos por WhatsApp."
+home_cta_send: "Enviar WhatsApp"
+home_whatsapp_msg: "Puedes%20darme%20más%20información?"
+
+# About page
+acerca_page_subtitle: "Conoce más sobre Matys Laundry"
+acerca_main_title: "Lavandería en el corazón de Arequipa"
+acerca_p1: "Matys Laundry es una lavandería ubicada en el centro histórico de Arequipa, Perú. Nació con el objetivo de ofrecer un servicio de lavandería moderno, confiable y accesible para residentes y viajeros."
+acerca_p2: "Nos encontramos en <strong class=\"text-slate-800\">Calle Jerusalén 519</strong>, a pocos minutos del centro de la ciudad. Atendemos ropa cotidiana, prendas delicadas, trajes, ropa de cama, cortinas y más — con insumos de calidad y maquinaria especializada."
+acerca_p3: "Si buscas una lavandería de confianza en Arequipa, Matys Laundry es tu mejor opción."
+acerca_schedule_label: "Horario"
+acerca_address_label: "Dirección"
+acerca_phone_label: "Teléfono / WhatsApp"
+acerca_email_label: "Email"
+
+# Services page
+servicios_page_subtitle: "Todo lo que ofrecemos en Matys Laundry"
+servicios_toc_label: "Ver contenido de esta página"
+servicios_toc_sidebar: "En esta página"
+
+# Services — Lavado
+lavado_title: "Lavado"
+lavado_p1: "Existen varios tipos de lavado. En Matys lo resumimos en dos: el lavado en agua (el más conocido) y el lavado en seco (para prendas especiales)."
+lavado_p2: "El proceso de lavado es diferente al que uno hace en casa. Separamos la ropa blanca de la de color, por grado de suciedad, por material, y otros aspectos que prolongan la vida útil de tus prendas."
+lavado_agua_title: "Lavado en Agua"
+lavado_agua_p1: "El lavado en agua es el más conocido. Muchas personas no saben cómo programar la lavadora correctamente para distintos tipos de ropa, lo que reduce la vida útil de las prendas."
+lavado_agua_p2: "En Matys nos encargamos de ese proceso para que tu ropa conserve su color y quede limpia sin maltratarla."
+lavado_seco_title: "Lavado en Seco"
+lavado_seco_p1: "El lavado en seco es para prendas que no pueden lavarse con métodos comunes porque su material es delicado."
+lavado_seco_p2: "Es un proceso especial donde utilizamos los insumos adecuados. Tú no tienes que preocuparte de esas cosas — eso está en nuestras manos."
+lavado_ternos_title: "Lavado de Ternos"
+lavado_ternos_p1: "Los trajes y ternos son de los que más atendemos. Dependiendo del material se utiliza lavado en agua o lavado en seco. También entran en esta categoría sacos, blazers y ropa de vestir elegante."
+lavado_ternos_p2: "Un buen cuidado determina el tiempo que dura la prenda."
+lavado_abrigos_title: "Lavado de Abrigos"
+lavado_abrigos_p1: "Lavamos distintos tipos de abrigos mediante lavado en seco o en agua, de acuerdo al material."
+lavado_abrigos_p2: "Estas prendas requieren de mucho cuidado para que duren bastante tiempo. Nosotros haremos este trabajo para que puedas tener tu prenda por más tiempo."
+lavado_vestidos_title: "Lavado de Vestidos"
+lavado_vestidos_p1: "Lavamos distintos tipos de vestidos de acuerdo al material: vestidos de novia, vestidos de fiesta o vestidos simples, todos con cuidado especial."
+lavado_vestidos_p2: "Al igual que los ternos o los abrigos, tienen un tratamiento especial ya sea al vapor o en agua."
+lavado_cuero_title: "Lavado de Casacas de Cuero"
+lavado_cuero_p1: "Las casacas de cuero son un poco difíciles de lavar. Tenemos los recursos necesarios para este trabajo."
+lavado_cuero_p2: "Haz que tus casacas de cuero estén en buen estado — tráelas a Matys y nosotros nos encargamos."
+lavado_corbatas_title: "Lavado de Corbatas"
+lavado_corbatas_p1: "Las corbatas se ensucian muy rápido y son difíciles de lavar. Tenemos la opción de lavarlas con el cuidado adecuado."
+lavado_corbatas_p2: "Mantén tus corbatas limpias y en buen estado para utilizarlas en momentos especiales."
+
+# Services — Planchado
+planchado_title: "Planchado"
+planchado_p1: "El planchado es importante para cierto tipo de ropa. Según el tipo de tela se usan diferentes temperaturas, y no es una plancha común sino una planchadora industrial especializada."
+planchado_p2: "Hay ropa que se arruga fácilmente y requiere planchado a temperaturas bajas, y hay ropa que <strong>no</strong> requiere planchado."
+planchado_p3: "Nosotros nos encargamos de clasificarlas — solo necesitas traer las prendas."
+planchado_normal_title: "Planchado Normal"
+planchado_normal_p1: "El planchado normal es el planchado sin usar vapor. Con nuestra plancha industrial podemos regular la temperatura con precisión."
+planchado_normal_p2: "Hay ropas que requieren este tipo de planchado para verse mejor."
+planchado_vapor_title: "Planchado al Vapor"
+planchado_vapor_p1: "El planchado al vapor es un tipo especial. Se debe regular la temperatura y el nivel de vapor de acuerdo al tipo de tela."
+planchado_vapor_p2: "Se realiza con el mismo equipo industrial pero utilizando la función de vapor para mejores resultados en ciertas prendas."
+
+# Services — Lavados Especiales
+especiales_title: "Lavados Especiales"
+especiales_p1: "En Matys no solo lavamos ropa. También ofrecemos lavados de otros materiales: ropa de cama, edredones, cortinas, tapasoles y más."
+especiales_p2: "A continuación describimos los servicios específicos de lavados especiales que ofrecemos."
+ropa_cama_title: "Lavado de Ropa de Cama"
+ropa_cama_p1: "Lavamos varios tipos de materiales, y la ropa de cama no es una excepción."
+ropa_cama_p2: "El lavado de ropa de cama engloba colchas, sábanas, cubrecamas, frazadas y similares."
+edredones_title: "Lavado de Edredones"
+edredones_p1: "Los edredones no son fáciles de lavar en casa por su tamaño y material. Por eso te ofrecemos este lavado especial para mantenerlos en perfectas condiciones."
+cortinas_title: "Lavado de Cortinas"
+cortinas_p1: "Las cortinas están en la sección de lavados especiales porque generalmente son grandes y hay de distintos materiales: delicadas, gruesas, delgadas, de blackout y más."
+tapasoles_title: "Lavado de Tapasoles"
+tapasoles_p1: "Los tapasoles son cortinas super gruesas diseñadas para bloquear completamente la entrada de luz solar. Por su material especial requieren un lavado específico."
+peluches_title: "Lavado de Peluches"
+peluches_p1: "¿Tienes peluches que quieres conservar limpios? ¿Son regalos especiales que te hicieron?"
+peluches_p2: "También te ofrecemos el servicio de lavado de peluches para que los mantengas en buen estado o simplemente para limpiarlos."

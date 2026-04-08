@@ -1,7 +1,28 @@
 baseURL = 'https://matyslaundry.com/'
-languageCode = 'es-PE'
-title = 'Lavandería en Arequipa - Matys Laundry'
+defaultContentLanguage = 'es'
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+  [languages.es]
+    languageCode = 'es-PE'
+    title = 'Lavandería en Arequipa - Matys Laundry'
+    weight = 1
+    [languages.es.params]
+      description = "Matys Laundry — lavandería en Arequipa, Perú. Servicios de lavado, secado y planchado. Laundry service in Arequipa, Peru. Calle Jerusalén 519."
+      ogImage = "https://matyslaundry.com/assets/images/matysfinal.jpg"
+      servicesPath = "/servicios/"
+      aboutPath = "/acerca/"
+
+  [languages.en]
+    languageCode = 'en'
+    title = 'Laundry Service in Arequipa - Matys Laundry'
+    weight = 2
+    [languages.en.params]
+      description = "Matys Laundry — laundry service in Arequipa, Peru. Wash, dry and ironing services. Located at Calle Jerusalén 519, city center."
+      ogImage = "https://matyslaundry.com/assets/images/matysfinal.jpg"
+      servicesPath = "/en/services/"
+      aboutPath = "/en/about/"
 
 [params]
-  description = "Matys Laundry — lavandería en Arequipa, Perú. Servicios de lavado, secado y planchado. Laundry service in Arequipa, Peru. Calle Jerusalén 519."
   ogImage = "https://matyslaundry.com/assets/images/matysfinal.jpg"

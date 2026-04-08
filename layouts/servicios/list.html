@@ -3,33 +3,33 @@
 <!-- Page header -->
 <div class="bg-blue-900 py-16 px-4 sm:px-6 text-white">
   <div class="max-w-6xl mx-auto">
-    <h1 class="text-4xl font-bold mb-1">Servicios</h1>
-    <p class="text-blue-200 text-lg">Todo lo que ofrecemos en Matys Laundry</p>
+    <h1 class="text-4xl font-bold mb-1">{{ i18n "nav_services" }}</h1>
+    <p class="text-blue-200 text-lg">{{ i18n "servicios_page_subtitle" }}</p>
   </div>
 </div>
 
 <!-- Mobile TOC -->
 <div class="lg:hidden bg-slate-50 border-b border-slate-200 px-4 py-3">
   <details class="text-sm">
-    <summary class="font-semibold text-slate-700 cursor-pointer">Ver contenido de esta página</summary>
+    <summary class="font-semibold text-slate-700 cursor-pointer">{{ i18n "servicios_toc_label" }}</summary>
     <nav class="mt-3 grid grid-cols-2 gap-1 text-slate-600">
-      <a href="#lavado" class="px-2 py-1 rounded hover:text-blue-700">Lavado</a>
-      <a href="#lavadoenagua" class="px-2 py-1 rounded hover:text-blue-700">Lavado en Agua</a>
-      <a href="#lavadoenseco" class="px-2 py-1 rounded hover:text-blue-700">Lavado en Seco</a>
-      <a href="#lavadodeternos" class="px-2 py-1 rounded hover:text-blue-700">Ternos y Sacos</a>
-      <a href="#lavadodeabrigos" class="px-2 py-1 rounded hover:text-blue-700">Abrigos</a>
-      <a href="#lavadodevestidos" class="px-2 py-1 rounded hover:text-blue-700">Vestidos</a>
-      <a href="#lavadodecasacasdecuero" class="px-2 py-1 rounded hover:text-blue-700">Casacas de Cuero</a>
-      <a href="#lavadodecorbatas" class="px-2 py-1 rounded hover:text-blue-700">Corbatas</a>
-      <a href="#planchado" class="px-2 py-1 rounded hover:text-blue-700">Planchado</a>
-      <a href="#planchadonormal" class="px-2 py-1 rounded hover:text-blue-700">Planchado Normal</a>
-      <a href="#planchadoalvapor" class="px-2 py-1 rounded hover:text-blue-700">Planchado al Vapor</a>
-      <a href="#lavadosespeciales" class="px-2 py-1 rounded hover:text-blue-700">Lavados Especiales</a>
-      <a href="#lavadoderopadecama" class="px-2 py-1 rounded hover:text-blue-700">Ropa de Cama</a>
-      <a href="#lavadodeedredones" class="px-2 py-1 rounded hover:text-blue-700">Edredones</a>
-      <a href="#lavadodecortinas" class="px-2 py-1 rounded hover:text-blue-700">Cortinas</a>
-      <a href="#lavadodetapasoles" class="px-2 py-1 rounded hover:text-blue-700">Tapasoles</a>
-      <a href="#lavadodepeluches" class="px-2 py-1 rounded hover:text-blue-700">Peluches</a>
+      <a href="#lavado" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_title" }}</a>
+      <a href="#lavadoenagua" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_agua_title" }}</a>
+      <a href="#lavadoenseco" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_seco_title" }}</a>
+      <a href="#lavadodeternos" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_ternos_title" }}</a>
+      <a href="#lavadodeabrigos" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_abrigos_title" }}</a>
+      <a href="#lavadodevestidos" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_vestidos_title" }}</a>
+      <a href="#lavadodecasacasdecuero" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_cuero_title" }}</a>
+      <a href="#lavadodecorbatas" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "lavado_corbatas_title" }}</a>
+      <a href="#planchado" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "planchado_title" }}</a>
+      <a href="#planchadonormal" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "planchado_normal_title" }}</a>
+      <a href="#planchadoalvapor" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "planchado_vapor_title" }}</a>
+      <a href="#lavadosespeciales" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "especiales_title" }}</a>
+      <a href="#lavadoderopadecama" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "ropa_cama_title" }}</a>
+      <a href="#lavadodeedredones" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "edredones_title" }}</a>
+      <a href="#lavadodecortinas" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "cortinas_title" }}</a>
+      <a href="#lavadodetapasoles" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "tapasoles_title" }}</a>
+      <a href="#lavadodepeluches" class="px-2 py-1 rounded hover:text-blue-700">{{ i18n "peluches_title" }}</a>
     </nav>
   </details>
 </div>
@@ -42,59 +42,59 @@
     <!-- Sticky sidebar TOC (desktop only) -->
     <aside class="hidden lg:block w-52 shrink-0">
       <div class="sticky top-24">
-        <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3 px-3">En esta página</p>
+        <p class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3 px-3">{{ i18n "servicios_toc_sidebar" }}</p>
         <nav class="space-y-0.5 text-sm">
           <a href="#lavado"
              :class="active === 'lavado' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
-             class="block px-3 py-1.5 rounded-lg transition-colors">Lavado</a>
+             class="block px-3 py-1.5 rounded-lg transition-colors">{{ i18n "lavado_title" }}</a>
           <a href="#lavadoenagua"
              :class="active === 'lavadoenagua' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Lavado en Agua</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_agua_title" }}</a>
           <a href="#lavadoenseco"
              :class="active === 'lavadoenseco' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Lavado en Seco</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_seco_title" }}</a>
           <a href="#lavadodeternos"
              :class="active === 'lavadodeternos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Ternos y Sacos</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_ternos_title" }}</a>
           <a href="#lavadodeabrigos"
              :class="active === 'lavadodeabrigos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Abrigos</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_abrigos_title" }}</a>
           <a href="#lavadodevestidos"
              :class="active === 'lavadodevestidos' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Vestidos</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_vestidos_title" }}</a>
           <a href="#lavadodecasacasdecuero"
              :class="active === 'lavadodecasacasdecuero' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Casacas de Cuero</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_cuero_title" }}</a>
           <a href="#lavadodecorbatas"
              :class="active === 'lavadodecorbatas' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Corbatas</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "lavado_corbatas_title" }}</a>
           <a href="#planchado"
              :class="active === 'planchado' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
-             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">Planchado</a>
+             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">{{ i18n "planchado_title" }}</a>
           <a href="#planchadonormal"
              :class="active === 'planchadonormal' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Planchado Normal</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "planchado_normal_title" }}</a>
           <a href="#planchadoalvapor"
              :class="active === 'planchadoalvapor' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Planchado al Vapor</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "planchado_vapor_title" }}</a>
           <a href="#lavadosespeciales"
              :class="active === 'lavadosespeciales' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'"
-             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">Lavados Especiales</a>
+             class="block px-3 py-1.5 rounded-lg transition-colors mt-1">{{ i18n "especiales_title" }}</a>
           <a href="#lavadoderopadecama"
              :class="active === 'lavadoderopadecama' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Ropa de Cama</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "ropa_cama_title" }}</a>
           <a href="#lavadodeedredones"
              :class="active === 'lavadodeedredones' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Edredones</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "edredones_title" }}</a>
           <a href="#lavadodecortinas"
              :class="active === 'lavadodecortinas' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Cortinas</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "cortinas_title" }}</a>
           <a href="#lavadodetapasoles"
              :class="active === 'lavadodetapasoles' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Tapasoles</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "tapasoles_title" }}</a>
           <a href="#lavadodepeluches"
              :class="active === 'lavadodepeluches' ? 'text-blue-700 font-semibold bg-blue-50' : 'text-slate-400 hover:text-slate-700 hover:bg-slate-50'"
-             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ Peluches</a>
+             class="block px-3 py-1.5 pl-6 rounded-lg transition-colors text-xs">↳ {{ i18n "peluches_title" }}</a>
         </nav>
       </div>
     </aside>
@@ -102,19 +102,18 @@
     <!-- Content -->
     <div class="flex-1 min-w-0 space-y-16">
 
-      <!-- Helper macro: section divider -->
       <!-- Lavado -->
       <section id="lavado" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
-          <h2 class="text-2xl font-bold text-slate-900">Lavado</h2>
+          <h2 class="text-2xl font-bold text-slate-900">{{ i18n "lavado_title" }}</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/lavadogeneral.jpg" alt="Servicio de lavado en Arequipa"
+          <img src="/assets/images/lavadogeneral.jpg" alt="{{ i18n `lavado_title` }} — Matys Laundry Arequipa"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Existen varios tipos de lavado. En Matys lo resumimos en dos: el lavado en agua (el más conocido) y el lavado en seco (para prendas especiales).</p>
-            <p>El proceso de lavado es diferente al que uno hace en casa. Separamos la ropa blanca de la de color, por grado de suciedad, por material, y otros aspectos que prolongan la vida útil de tus prendas.</p>
+            <p>{{ i18n "lavado_p1" }}</p>
+            <p>{{ i18n "lavado_p2" }}</p>
           </div>
         </div>
       </section>
@@ -123,14 +122,14 @@
       <section id="lavadoenagua" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado en Agua</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_agua_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>El lavado en agua es el más conocido. Muchas personas no saben cómo programar la lavadora correctamente para distintos tipos de ropa, lo que reduce la vida útil de las prendas.</p>
-            <p>En Matys nos encargamos de ese proceso para que tu ropa conserve su color y quede limpia sin maltratarla.</p>
+            <p>{{ i18n "lavado_agua_p1" }}</p>
+            <p>{{ i18n "lavado_agua_p2" }}</p>
           </div>
-          <img src="/assets/images/lavadoenagua.jpg" alt="Lavado en agua"
+          <img src="/assets/images/lavadoenagua.jpg" alt="{{ i18n `lavado_agua_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -139,14 +138,14 @@
       <section id="lavadoenseco" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado en Seco</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_seco_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/insumo.jpg" alt="Lavado en seco - insumos"
+          <img src="/assets/images/insumo.jpg" alt="{{ i18n `lavado_seco_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>El lavado en seco es para prendas que no pueden lavarse con métodos comunes porque su material es delicado.</p>
-            <p>Es un proceso especial donde utilizamos los insumos adecuados. Tú no tienes que preocuparte de esas cosas — eso está en nuestras manos.</p>
+            <p>{{ i18n "lavado_seco_p1" }}</p>
+            <p>{{ i18n "lavado_seco_p2" }}</p>
           </div>
         </div>
       </section>
@@ -155,14 +154,14 @@
       <section id="lavadodeternos" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Ternos</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_ternos_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Los trajes y ternos son de los que más atendemos. Dependiendo del material se utiliza lavado en agua o lavado en seco. También entran en esta categoría sacos, blazers y ropa de vestir elegante.</p>
-            <p>Un buen cuidado determina el tiempo que dura la prenda.</p>
+            <p>{{ i18n "lavado_ternos_p1" }}</p>
+            <p>{{ i18n "lavado_ternos_p2" }}</p>
           </div>
-          <img src="/assets/images/sacos.jpg" alt="Lavado de ternos y sacos"
+          <img src="/assets/images/sacos.jpg" alt="{{ i18n `lavado_ternos_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -171,14 +170,14 @@
       <section id="lavadodeabrigos" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Abrigos</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_abrigos_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/abrigos.jpg" alt="Lavado de abrigos"
+          <img src="/assets/images/abrigos.jpg" alt="{{ i18n `lavado_abrigos_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Lavamos distintos tipos de abrigos mediante lavado en seco o en agua, de acuerdo al material.</p>
-            <p>Estas prendas requieren de mucho cuidado para que duren bastante tiempo. Nosotros haremos este trabajo para que puedas tener tu prenda por más tiempo.</p>
+            <p>{{ i18n "lavado_abrigos_p1" }}</p>
+            <p>{{ i18n "lavado_abrigos_p2" }}</p>
           </div>
         </div>
       </section>
@@ -187,14 +186,14 @@
       <section id="lavadodevestidos" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Vestidos</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_vestidos_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Lavamos distintos tipos de vestidos de acuerdo al material: vestidos de novia, vestidos de fiesta o vestidos simples, todos con cuidado especial.</p>
-            <p>Al igual que los ternos o los abrigos, tienen un tratamiento especial ya sea al vapor o en agua.</p>
+            <p>{{ i18n "lavado_vestidos_p1" }}</p>
+            <p>{{ i18n "lavado_vestidos_p2" }}</p>
           </div>
-          <img src="/assets/images/vestidos.jpeg" alt="Lavado de vestidos"
+          <img src="/assets/images/vestidos.jpeg" alt="{{ i18n `lavado_vestidos_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -203,14 +202,14 @@
       <section id="lavadodecasacasdecuero" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Casacas de Cuero</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_cuero_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/casacacuero.jpg" alt="Lavado de casacas de cuero"
+          <img src="/assets/images/casacacuero.jpg" alt="{{ i18n `lavado_cuero_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Las casacas de cuero son un poco difíciles de lavar. Tenemos los recursos necesarios para este trabajo.</p>
-            <p>Haz que tus casacas de cuero estén en buen estado — tráelas a Matys y nosotros nos encargamos.</p>
+            <p>{{ i18n "lavado_cuero_p1" }}</p>
+            <p>{{ i18n "lavado_cuero_p2" }}</p>
           </div>
         </div>
       </section>
@@ -219,14 +218,14 @@
       <section id="lavadodecorbatas" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Corbatas</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "lavado_corbatas_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Las corbatas se ensucian muy rápido y son difíciles de lavar. Tenemos la opción de lavarlas con el cuidado adecuado.</p>
-            <p>Mantén tus corbatas limpias y en buen estado para utilizarlas en momentos especiales.</p>
+            <p>{{ i18n "lavado_corbatas_p1" }}</p>
+            <p>{{ i18n "lavado_corbatas_p2" }}</p>
           </div>
-          <img src="/assets/images/corbatas.jpeg" alt="Lavado de corbatas"
+          <img src="/assets/images/corbatas.jpeg" alt="{{ i18n `lavado_corbatas_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -235,15 +234,15 @@
       <section id="planchado" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
-          <h2 class="text-2xl font-bold text-slate-900">Planchado</h2>
+          <h2 class="text-2xl font-bold text-slate-900">{{ i18n "planchado_title" }}</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/plancha.jpeg" alt="Servicio de planchado en Arequipa"
+          <img src="/assets/images/plancha.jpeg" alt="{{ i18n `planchado_title` }} — Matys Laundry Arequipa"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>El planchado es importante para cierto tipo de ropa. Según el tipo de tela se usan diferentes temperaturas, y no es una plancha común sino una planchadora industrial especializada.</p>
-            <p>Hay ropa que se arruga fácilmente y requiere planchado a temperaturas bajas, y hay ropa que <strong>no</strong> requiere planchado.</p>
-            <p>Nosotros nos encargamos de clasificarlas — solo necesitas traer las prendas.</p>
+            <p>{{ i18n "planchado_p1" }}</p>
+            <p>{{ i18n "planchado_p2" | safeHTML }}</p>
+            <p>{{ i18n "planchado_p3" }}</p>
           </div>
         </div>
       </section>
@@ -252,14 +251,14 @@
       <section id="planchadonormal" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Planchado Normal</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "planchado_normal_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>El planchado normal es el planchado sin usar vapor. Con nuestra plancha industrial podemos regular la temperatura con precisión.</p>
-            <p>Hay ropas que requieren este tipo de planchado para verse mejor.</p>
+            <p>{{ i18n "planchado_normal_p1" }}</p>
+            <p>{{ i18n "planchado_normal_p2" }}</p>
           </div>
-          <img src="/assets/images/ropadoblada.jpeg" alt="Planchado normal - ropa doblada"
+          <img src="/assets/images/ropadoblada.jpeg" alt="{{ i18n `planchado_normal_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -268,14 +267,14 @@
       <section id="planchadoalvapor" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Planchado al Vapor</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "planchado_vapor_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/planchavapor.png" alt="Planchado al vapor"
+          <img src="/assets/images/planchavapor.png" alt="{{ i18n `planchado_vapor_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>El planchado al vapor es un tipo especial. Se debe regular la temperatura y el nivel de vapor de acuerdo al tipo de tela.</p>
-            <p>Se realiza con el mismo equipo industrial pero utilizando la función de vapor para mejores resultados en ciertas prendas.</p>
+            <p>{{ i18n "planchado_vapor_p1" }}</p>
+            <p>{{ i18n "planchado_vapor_p2" }}</p>
           </div>
         </div>
       </section>
@@ -284,14 +283,14 @@
       <section id="lavadosespeciales" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-8 bg-blue-700 rounded-full shrink-0"></div>
-          <h2 class="text-2xl font-bold text-slate-900">Lavados Especiales</h2>
+          <h2 class="text-2xl font-bold text-slate-900">{{ i18n "especiales_title" }}</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>En Matys no solo lavamos ropa. También ofrecemos lavados de otros materiales: ropa de cama, edredones, cortinas, tapasoles y más.</p>
-            <p>A continuación describimos los servicios específicos de lavados especiales que ofrecemos.</p>
+            <p>{{ i18n "especiales_p1" }}</p>
+            <p>{{ i18n "especiales_p2" }}</p>
           </div>
-          <img src="/assets/images/colchas.jpg" alt="Lavados especiales - colchas y edredones"
+          <img src="/assets/images/colchas.jpg" alt="{{ i18n `especiales_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -300,14 +299,14 @@
       <section id="lavadoderopadecama" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Ropa de Cama</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "ropa_cama_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/colchas1.jpg" alt="Lavado de ropa de cama, colchas y sábanas"
+          <img src="/assets/images/colchas1.jpg" alt="{{ i18n `ropa_cama_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Lavamos varios tipos de materiales, y la ropa de cama no es una excepción.</p>
-            <p>El lavado de ropa de cama engloba colchas, sábanas, cubrecamas, frazadas y similares.</p>
+            <p>{{ i18n "ropa_cama_p1" }}</p>
+            <p>{{ i18n "ropa_cama_p2" }}</p>
           </div>
         </div>
       </section>
@@ -316,13 +315,13 @@
       <section id="lavadodeedredones" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Edredones</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "edredones_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Los edredones no son fáciles de lavar en casa por su tamaño y material. Por eso te ofrecemos este lavado especial para mantenerlos en perfectas condiciones.</p>
+            <p>{{ i18n "edredones_p1" }}</p>
           </div>
-          <img src="/assets/images/edredones.jpg" alt="Lavado de edredones"
+          <img src="/assets/images/edredones.jpg" alt="{{ i18n `edredones_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -331,13 +330,13 @@
       <section id="lavadodecortinas" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Cortinas</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "cortinas_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/cortinas.jpeg" alt="Lavado de cortinas"
+          <img src="/assets/images/cortinas.jpeg" alt="{{ i18n `cortinas_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Las cortinas están en la sección de lavados especiales porque generalmente son grandes y hay de distintos materiales: delicadas, gruesas, delgadas, de blackout y más.</p>
+            <p>{{ i18n "cortinas_p1" }}</p>
           </div>
         </div>
       </section>
@@ -346,13 +345,13 @@
       <section id="lavadodetapasoles" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Tapasoles</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "tapasoles_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>Los tapasoles son cortinas super gruesas diseñadas para bloquear completamente la entrada de luz solar. Por su material especial requieren un lavado específico.</p>
+            <p>{{ i18n "tapasoles_p1" }}</p>
           </div>
-          <img src="/assets/images/tapasol.jpeg" alt="Lavado de tapasoles y blackout"
+          <img src="/assets/images/tapasol.jpeg" alt="{{ i18n `tapasoles_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
         </div>
       </section>
@@ -361,14 +360,14 @@
       <section id="lavadodepeluches" data-spy class="scroll-mt-24">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-6 bg-slate-300 rounded-full shrink-0"></div>
-          <h3 class="text-xl font-semibold text-slate-800">Lavado de Peluches</h3>
+          <h3 class="text-xl font-semibold text-slate-800">{{ i18n "peluches_title" }}</h3>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-          <img src="/assets/images/peluche.jpeg" alt="Lavado de peluches"
+          <img src="/assets/images/peluche.jpeg" alt="{{ i18n `peluches_title` }}"
                class="rounded-xl shadow-sm w-full h-56 object-cover" loading="lazy" />
           <div class="space-y-3 text-slate-600 leading-relaxed">
-            <p>¿Tienes peluches que quieres conservar limpios? ¿Son regalos especiales que te hicieron?</p>
-            <p>También te ofrecemos el servicio de lavado de peluches para que los mantengas en buen estado o simplemente para limpiarlos.</p>
+            <p>{{ i18n "peluches_p1" }}</p>
+            <p>{{ i18n "peluches_p2" }}</p>
           </div>
         </div>
       </section>

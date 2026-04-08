@@ -3,8 +3,8 @@
 <!-- Page header -->
 <div class="bg-blue-900 py-16 px-4 sm:px-6 text-white">
   <div class="max-w-6xl mx-auto">
-    <h1 class="text-4xl font-bold mb-1">Nosotros</h1>
-    <p class="text-blue-200 text-lg">Conoce más sobre Matys Laundry</p>
+    <h1 class="text-4xl font-bold mb-1">{{ i18n "nav_about" }}</h1>
+    <p class="text-blue-200 text-lg">{{ i18n "acerca_page_subtitle" }}</p>
   </div>
 </div>
 
@@ -15,30 +15,18 @@
 
       <div>
         <img src="/assets/images/matys2.jpg"
-             alt="Lavandería Matys Laundry en Arequipa, Perú"
+             alt="Matys Laundry — Arequipa, Perú"
              class="rounded-2xl shadow-lg w-full object-cover" loading="lazy" />
       </div>
 
       <div>
         <h2 class="text-2xl font-bold text-slate-900 mb-6">
-          Lavandería en el corazón de Arequipa
+          {{ i18n "acerca_main_title" }}
         </h2>
         <div class="space-y-4 text-slate-600 leading-relaxed">
-          <p>
-            Matys Laundry es una lavandería ubicada en el centro histórico de
-            Arequipa, Perú. Nació con el objetivo de ofrecer un servicio de
-            lavandería moderno, confiable y accesible para residentes y viajeros.
-          </p>
-          <p>
-            Nos encontramos en <strong class="text-slate-800">Calle Jerusalén 519</strong>,
-            a pocos minutos del centro de la ciudad. Atendemos ropa cotidiana,
-            prendas delicadas, trajes, ropa de cama, cortinas y más — con insumos
-            de calidad y maquinaria especializada.
-          </p>
-          <p>
-            Si buscas una lavandería de confianza en Arequipa,
-            Matys Laundry es tu mejor opción.
-          </p>
+          <p>{{ i18n "acerca_p1" }}</p>
+          <p>{{ i18n "acerca_p2" | safeHTML }}</p>
+          <p>{{ i18n "acerca_p3" }}</p>
         </div>
 
         <!-- Info grid -->
@@ -49,8 +37,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <div>
-              <p class="font-semibold text-slate-800 text-sm">Horario</p>
-              <p class="text-slate-500 text-sm">Lun–Sáb: 8:00 am – 8:00 pm</p>
+              <p class="font-semibold text-slate-800 text-sm">{{ i18n "acerca_schedule_label" }}</p>
+              <p class="text-slate-500 text-sm">{{ i18n "footer_hours" }}</p>
             </div>
           </div>
 
@@ -60,7 +48,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
             <div>
-              <p class="font-semibold text-slate-800 text-sm">Dirección</p>
+              <p class="font-semibold text-slate-800 text-sm">{{ i18n "acerca_address_label" }}</p>
               <a href="https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA" target="_blank" rel="noopener noreferrer"
                  class="text-blue-700 hover:text-blue-900 text-sm transition-colors">
                 Calle Jerusalén 519, Arequipa
@@ -73,7 +61,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
             <div>
-              <p class="font-semibold text-slate-800 text-sm">Teléfono / WhatsApp</p>
+              <p class="font-semibold text-slate-800 text-sm">{{ i18n "acerca_phone_label" }}</p>
               <a href="https://wa.me/51995577941" target="_blank" rel="noopener noreferrer"
                  class="text-blue-700 hover:text-blue-900 text-sm font-medium transition-colors">
                 (+51) 995 577 941
@@ -86,7 +74,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
             <div>
-              <p class="font-semibold text-slate-800 text-sm">Email</p>
+              <p class="font-semibold text-slate-800 text-sm">{{ i18n "acerca_email_label" }}</p>
               <a href="mailto:matyslaundry@gmail.com"
                  class="text-blue-700 hover:text-blue-900 text-sm font-medium transition-colors">
                 matyslaundry@gmail.com

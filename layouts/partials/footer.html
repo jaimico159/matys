@@ -4,19 +4,19 @@
 
       <!-- Map -->
       <div>
-        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">Cómo Llegar</h3>
+        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">{{ i18n "footer_how_to_get" }}</h3>
         <div id="map"></div>
         <a href="https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA"
            target="_blank" rel="noopener noreferrer"
            class="inline-block mt-3 text-sm text-amber-400 hover:text-amber-300 transition-colors">
-          Ver en Google Maps &rarr;
+          {{ i18n "footer_view_maps" }} &rarr;
         </a>
       </div>
 
       <!-- Contact -->
       <div>
-        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">Contacto</h3>
-        <p class="font-semibold text-white mb-4">Lavandería Matys Laundry</p>
+        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">{{ i18n "footer_contact_heading" }}</h3>
+        <p class="font-semibold text-white mb-4">Matys Laundry</p>
         <ul class="space-y-3 text-sm">
           <li class="flex items-start gap-2.5">
             <svg class="w-4 h-4 mt-0.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -25,7 +25,7 @@
             </svg>
             <a href="https://maps.app.goo.gl/N3HxF7iBgk5y2L1dA" target="_blank" rel="noopener noreferrer"
                class="hover:text-amber-400 transition-colors">
-              Calle Jerusalén 519, Arequipa, Perú
+              {{ i18n "footer_address" }}
             </a>
           </li>
           <li class="flex items-center gap-2.5">
@@ -50,20 +50,20 @@
             <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <span>Lun–Sáb: 8:00 am – 8:00 pm</span>
+            <span>{{ i18n "footer_hours" }}</span>
           </li>
         </ul>
       </div>
 
       <!-- Links -->
       <div>
-        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">Navegación</h3>
+        <h3 class="text-white font-semibold text-xs uppercase tracking-widest mb-4">{{ i18n "footer_navigation" }}</h3>
         <ul class="space-y-2 text-sm mb-8">
-          <li><a href="/" class="hover:text-amber-400 transition-colors">Inicio</a></li>
-          <li><a href="/acerca/" class="hover:text-amber-400 transition-colors">Nosotros</a></li>
-          <li><a href="/servicios/" class="hover:text-amber-400 transition-colors">Servicios</a></li>
+          <li><a href="{{ .Site.Home.RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_home" }}</a></li>
+          {{ with .Site.GetPage "acerca" }}<li><a href="{{ .RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_about" }}</a></li>{{ end }}
+          {{ with .Site.GetPage "servicios" }}<li><a href="{{ .RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_services" }}</a></li>{{ end }}
         </ul>
-        <a href="https://wa.me/51995577941?text=Puedes%20darme%20más%20información?"
+        <a href="https://wa.me/51995577941?text={{ i18n `home_whatsapp_msg` }}"
            target="_blank" rel="noopener noreferrer"
            class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-4 py-2.5 rounded-lg text-sm transition-colors">
           <img src="/assets/images/wssp-icon.png" alt="" width="18" height="18" />
@@ -74,7 +74,7 @@
 
     <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
       <p>&copy; {{ now.Year }} Matys Laundry &middot; Arequipa, Perú</p>
-      <p>Built by <a href="https://www.linkedin.com/company/ideien" target="_blank" rel="nofollow noopener noreferrer" class="hover:text-slate-300 transition-colors">Ideien Software and Technology</a></p>
+      <p>{{ i18n "footer_built_by" }} <a href="https://www.linkedin.com/company/ideien" target="_blank" rel="nofollow noopener noreferrer" class="hover:text-slate-300 transition-colors">Ideien Software and Technology</a></p>
     </div>
   </div>
 </footer>
