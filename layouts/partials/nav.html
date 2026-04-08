@@ -21,10 +21,6 @@
          class="{{ if eq .Section `servicios` }}text-blue-700 bg-blue-50{{ else }}text-slate-600 hover:text-slate-900 hover:bg-slate-50{{ end }} px-3 py-2 rounded-lg transition-colors">
         Servicios
       </a>
-      <a href="/promociones/"
-         class="{{ if eq .Section `promociones` }}text-blue-700 bg-blue-50{{ else }}text-slate-600 hover:text-slate-900 hover:bg-slate-50{{ end }} px-3 py-2 rounded-lg transition-colors">
-        Promociones
-      </a>
       <a href="https://wa.me/51995577941"
          target="_blank" rel="noopener noreferrer"
          class="ml-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">
@@ -36,10 +32,10 @@
     <button @click="open = !open"
             class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors"
             aria-label="Abrir menú">
-      <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
-      <svg x-show="open" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg x-show="open" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
       </svg>
     </button>
@@ -58,7 +54,6 @@
       <a href="/" class="px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Inicio</a>
       <a href="/acerca/" class="px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Nosotros</a>
       <a href="/servicios/" class="px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Servicios</a>
-      <a href="/promociones/" class="px-3 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Promociones</a>
       <div class="pt-2 pb-1">
         <a href="https://wa.me/51995577941"
            target="_blank" rel="noopener noreferrer"
