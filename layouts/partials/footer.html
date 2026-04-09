@@ -62,6 +62,7 @@
           <li><a href="{{ .Site.Home.RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_home" }}</a></li>
           {{ with .Site.GetPage "acerca" }}<li><a href="{{ .RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_about" }}</a></li>{{ end }}
           {{ with .Site.GetPage "servicios" }}<li><a href="{{ .RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_services" }}</a></li>{{ end }}
+          {{ with .Site.GetPage "privacidad" }}<li><a href="{{ .RelPermalink }}" class="hover:text-amber-400 transition-colors">{{ i18n "nav_privacy" }}</a></li>{{ end }}
         </ul>
         <a href="https://wa.me/51995577941?text={{ i18n `home_whatsapp_msg` }}"
            target="_blank" rel="noopener noreferrer"
